@@ -1,0 +1,3653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISI Strategic Plan 2026–2031</title>
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --primary-light: #2c6e49;
+            --accent: #eaf4ea;
+            --border: #c8d6c8;
+            --text: #222;
+            --muted: #555;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 1050px;
+            margin: 0 auto;
+            padding: 30px 24px 100px;
+            line-height: 1.65;
+            color: var(--text);
+            background: #fdfdfd;
+        }
+
+        /* COVER */
+        header.cover {
+            text-align: center;
+            padding: 60px 30px;
+            background: var(--accent);
+            border-top: 8px solid var(--primary);
+            border-bottom: 4px solid var(--primary);
+            border-radius: 8px;
+            margin-bottom: 40px;
+        }
+
+        header.cover h1 {
+            color: var(--primary);
+            margin: 0 0 12px;
+            font-size: 1.8em;
+            letter-spacing: 0.5px;
+        }
+
+        header.cover h2 {
+            color: var(--primary);
+            margin: 10px 0;
+            font-size: 2.2em;
+            border: none;
+            letter-spacing: 1px;
+        }
+
+        header.cover .tagline {
+            font-style: italic;
+            font-size: 1.15em;
+            color: var(--primary-light);
+            margin: 15px 0;
+        }
+
+        header.cover .meta {
+            font-style: italic;
+            color: var(--muted);
+            font-size: 0.95em;
+            margin-top: 30px;
+        }
+
+        /* NAV / TOC */
+        nav.toc {
+            background: #fff;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            padding: 20px 30px;
+            margin-bottom: 50px;
+        }
+
+        nav.toc h2 {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            font-size: 1.3em;
+        }
+
+        nav.toc ol {
+            margin-left: 20px;
+        }
+
+        nav.toc ol li {
+            margin-bottom: 4px;
+        }
+
+        nav.toc a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADINGS */
+        h1.part-title {
+            color: #fff;
+            background: var(--primary);
+            padding: 16px 22px;
+            border-radius: 6px;
+            margin-top: 70px;
+            font-size: 1.5em;
+            text-align: center;
+            letter-spacing: 1.5px;
+        }
+
+        h2.section-title {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 10px;
+            margin-top: 50px;
+            font-size: 1.4em;
+        }
+
+        h3 {
+            color: var(--primary-light);
+            margin-top: 30px;
+            font-size: 1.15em;
+        }
+
+        h4 {
+            color: var(--primary-light);
+            margin-top: 22px;
+            font-size: 1.05em;
+        }
+
+        /* TABLES */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0 25px;
+            font-size: 0.92em;
+        }
+
+        th,
+        td {
+            border: 1px solid #bbb;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: #fff;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) td {
+            background-color: var(--accent);
+        }
+
+        /* LISTS */
+        ul,
+        ol {
+            margin-left: 22px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* CALLOUT BOXES */
+        .callout {
+            background: var(--accent);
+            border-left: 4px solid var(--primary);
+            padding: 14px 20px;
+            margin: 18px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .callout strong {
+            color: var(--primary);
+        }
+
+        .kpi-box {
+            background: #fff;
+            border: 2px solid var(--primary-light);
+            border-radius: 6px;
+            padding: 12px 18px;
+            margin: 15px 0;
+        }
+
+        /* BACK TO TOP */
+        .back-to-top {
+            display: block;
+            text-align: right;
+            font-size: 0.88em;
+            color: var(--muted);
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .back-to-top a {
+            color: var(--primary-light);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer.manual-footer {
+            margin-top: 80px;
+            border-top: 3px solid var(--primary);
+            padding-top: 25px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9em;
+        }
+
+        /* PRINT STYLES */
+        @media print {
+            body {
+                max-width: none;
+                padding: 15mm;
+                font-size: 10.5pt;
+                background: #fff;
+            }
+
+            nav.toc {
+                page-break-after: always;
+            }
+
+            h1.part-title {
+                page-break-before: always;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            h2.section-title {
+                page-break-after: avoid;
+            }
+
+            .back-to-top {
+                display: none;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            table {
+                page-break-inside: auto;
+            }
+
+            tr {
+                page-break-inside: avoid;
+            }
+
+            th,
+            .callout,
+            h1.part-title,
+            header.cover {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding: 15px 12px 60px;
+            }
+
+            table {
+                font-size: 0.82em;
+            }
+
+            header.cover h2 {
+                font-size: 1.5em;
+            }
+
+            h1.part-title {
+                font-size: 1.2em;
+            }
+        }
+
+        /* TOP NAVIGATION BAR */
+        .doc-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--primary);
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(26, 77, 46, 0.08);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .doc-top-bar a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .doc-top-bar a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+
+        .doc-top-bar .doc-links {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        @media print {
+            .doc-top-bar {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Quick Navigation Bar -->
+    <div class="doc-top-bar">
+        <a href="index.html">← Back to KISI Portal</a>
+        <div class="doc-links">
+            <a href="completemanual.html">Safeguarding Manual →</a>
+        </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- COVER PAGE -->
+    <!-- ============================================================ -->
+    <header class="cover">
+        <h1>KILIFIAN4 INTEGRITY AND SUSTAINABILITY INITIATIVE (KISI)</h1>
+        <h2>STRATEGIC PLAN 2026–2031</h2>
+        <p class="tagline">"Keep It Sustainable and Sound"</p>
+        <p class="meta">
+            <strong>Version:</strong> 2.0<br>
+            <strong>Approved:</strong> March 2026<br>
+            <strong>Mid-Term Review:</strong> March 2029<br>
+            <strong>End-Term Review:</strong> March 2031<br>
+            <strong>Document Reference:</strong> KISI-SP-2026-v2.0<br>
+            <strong>Policy Owner:</strong> Chairperson, KISI CBO<br>
+            <strong>Contact:</strong> kilifian4cbo@yahoo.com | 0720468616<br>
+            <strong>Address:</strong> 195 80108, Kilifi Kenya, Kibano, Mombasa–Malindi Road
+        </p>
+    </header>
+
+    <!-- ============================================================ -->
+    <!-- TABLE OF CONTENTS -->
+    <!-- ============================================================ -->
+    <nav class="toc" id="toc">
+        <h2>Table of Contents</h2>
+
+        <p><strong>PART 1: STRATEGIC FOUNDATION</strong></p>
+        <ol>
+            <li><a href="#s1">Executive Summary</a></li>
+            <li><a href="#s2">Introduction and Background</a></li>
+            <li><a href="#s3">Organisational Profile</a></li>
+            <li><a href="#s4">Vision, Mission, and Core Values</a></li>
+            <li><a href="#s5">Strategic Context and Analysis</a></li>
+        </ol>
+
+        <p><strong>PART 2: STRATEGIC FRAMEWORK</strong></p>
+        <ol start="6">
+            <li><a href="#s6">Strategic Pillars and Objectives</a></li>
+            <li><a href="#s7">Theory of Change</a></li>
+            <li><a href="#s8">Results Framework</a></li>
+        </ol>
+
+        <p><strong>PART 3: IMPLEMENTATION</strong></p>
+        <ol start="9">
+            <li><a href="#s9">Implementation Framework</a></li>
+            <li><a href="#s10">Detailed Activities and SOPs</a></li>
+            <li><a href="#s11">Annual Work Plans and Almanac</a></li>
+            <li><a href="#s12">Resource Mobilisation Strategy</a></li>
+            <li><a href="#s13">Detailed Budget (5 Years)</a></li>
+        </ol>
+
+        <p><strong>PART 4: MONITORING, EVALUATION, AND LEARNING</strong></p>
+        <ol start="14">
+            <li><a href="#s14">M&amp;E Framework</a></li>
+            <li><a href="#s15">Key Performance Indicators (KPIs)</a></li>
+            <li><a href="#s16">Key Risk Indicators (KRIs)</a></li>
+            <li><a href="#s17">Risk Management Framework</a></li>
+            <li><a href="#s18">Learning and Adaptive Management</a></li>
+        </ol>
+
+        <p><strong>PART 5: GOVERNANCE AND COMPLIANCE</strong></p>
+        <ol start="19">
+            <li><a href="#s19">Regulatory Framework</a></li>
+            <li><a href="#s20">Policies, Rules, and Guidelines</a></li>
+            <li><a href="#s21">Financial Management and Controls</a></li>
+            <li><a href="#s22">Procurement and Asset Management</a></li>
+            <li><a href="#s23">Safeguarding and Ethics</a></li>
+        </ol>
+
+        <p><strong>PART 6: SUSTAINABILITY AND EXIT</strong></p>
+        <ol start="24">
+            <li><a href="#s24">Sustainability Strategy</a></li>
+            <li><a href="#s25">Exit Strategy</a></li>
+            <li><a href="#s26">Partnerships and Collaboration</a></li>
+        </ol>
+
+        <p><strong>PART 7: APPENDICES</strong></p>
+        <ol type="A">
+            <li><a href="#apA">Results Framework Matrix</a></li>
+            <li><a href="#apB">Annual Work Plan Template</a></li>
+            <li><a href="#apC">Quarterly Reporting Template</a></li>
+            <li><a href="#apD">KPI Tracking Sheet</a></li>
+            <li><a href="#apE">KRI Tracking Sheet</a></li>
+            <li><a href="#apF">Risk Register Template</a></li>
+            <li><a href="#apG">Stakeholder Register</a></li>
+            <li><a href="#apH">Asset Register</a></li>
+            <li><a href="#apI">Financial Report Template</a></li>
+            <li><a href="#apJ">M&amp;E Data Collection Tools</a></li>
+            <li><a href="#apK">Standard Operating Procedures (SOPs)</a></li>
+            <li><a href="#apL">Financial Policies (Quick Reference)</a></li>
+            <li><a href="#apM">Regulatory Compliance Checklist</a></li>
+            <li><a href="#apN">Glossary of Terms</a></li>
+            <li><a href="#apO">Approval and Signatures</a></li>
+        </ol>
+    </nav>
+
+    <!-- ============================================================ -->
+    <!-- PART 1 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part1">PART 1: STRATEGIC FOUNDATION</h1>
+
+    <h2 class="section-title" id="s1">1. Executive Summary</h2>
+    <p>Kilifian4 Integrity and Sustainability Initiative (KISI) is a community-based organisation registered in Kilifi
+        County, Kenya, in 2025. KISI is dedicated to promoting sustainable livelihoods, environmental conservation, and
+        community health through integrity-driven, locally appropriate innovations.</p>
+    <p>This Strategic Plan 2026–2031 sets out KISI's vision, mission, core values, strategic pillars, implementation
+        framework, monitoring and evaluation systems, budget, and sustainability strategy for the next five years. The
+        plan is guided by KISI's motto, "Keep It Sustainable and Sound" (KISS), and is aligned with Kenya's Vision 2030,
+        the Bottom-Up Economic Transformation Agenda (BETA), the Sustainable Development Goals (SDGs), the Commonwealth
+        Foundation's strategic priorities, and the Kilifi County Integrated Development Plan (CIDP) 2023–2027.</p>
+    <p><strong>Key Highlights:</strong></p>
+    <ul>
+        <li><strong>Vision:</strong> A global network of thriving, equitable, and resilient communities.</li>
+        <li><strong>Mission:</strong> To empower individuals, organisations, and governments to build sustainable
+            societies.</li>
+        <li><strong>Strategic Pillars:</strong> Eight interconnected pillars.</li>
+        <li><strong>Target Beneficiaries:</strong> 10,000 households across Kilifi County by 2031.</li>
+        <li><strong>Total Budget:</strong> GBP 500,000 over five years.</li>
+        <li><strong>Funding Sources:</strong> Grants, donations, social enterprise revenue, and government partnerships.
+        </li>
+        <li><strong>Governance:</strong> A seven-member Management Committee.</li>
+        <li><strong>M&amp;E:</strong> A comprehensive framework with 8 impact indicators, 40 outcome indicators, and 150
+            output indicators.</li>
+        <li><strong>Risk Management:</strong> A structured Risk Register with 20 identified risks and mitigation
+            strategies.</li>
+        <li><strong>Sustainability:</strong> Social enterprise revenue, reserves, and diversified funding.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s2">2. Introduction and Background</h2>
+    <h3>2.1 About KISI</h3>
+    <p>Kilifian4 Integrity and Sustainability Initiative (KISI) is a non-political, non-denominational membership
+        association registered in Kilifi County, Kenya. KISI was founded in 2025 by a group of professionals from Pwani
+        University and its structured affiliates.</p>
+
+    <h3>2.2 Rationale for the Strategic Plan</h3>
+    <p>Kilifi County faces significant challenges:</p>
+    <ul>
+        <li><strong>Poverty:</strong> 71.7% of the population lives below the poverty line (KNBS, 2023)</li>
+        <li><strong>Unemployment:</strong> Youth unemployment exceeds 40%</li>
+        <li><strong>Water Scarcity:</strong> 56% of Kenyans lack access to safe water (WHO, 2024)</li>
+        <li><strong>Energy Poverty:</strong> 92% of households lack reliable energy access</li>
+        <li><strong>Food Insecurity:</strong> 65% of households are food insecure</li>
+        <li><strong>Environmental Degradation:</strong> Deforestation, soil erosion, climate change</li>
+        <li><strong>Gender Inequality:</strong> Women have limited access to education, income, decision-making</li>
+        <li><strong>Health Challenges:</strong> Oral health issues, waterborne diseases, limited healthcare</li>
+    </ul>
+
+    <h3>2.3 Development Process</h3>
+    <p>This Strategic Plan was developed through a participatory process involving the KISI Management Committee, KISI
+        members, community representatives, local government officials, partner organisations, and beneficiaries.</p>
+
+    <h3>2.4 Alignment with National and International Frameworks</h3>
+    <ul>
+        <li>Kenya Vision 2030</li>
+        <li>Bottom-Up Economic Transformation Agenda (BETA)</li>
+        <li>Kenya's Medium-Term Plan IV (2023–2027)</li>
+        <li>Kilifi County Integrated Development Plan (CIDP) 2023–2027</li>
+        <li>Sustainable Development Goals (SDGs)</li>
+        <li>Africa Union Agenda 2063</li>
+        <li>Commonwealth Charter</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s3">3. Organisational Profile</h2>
+    <h3>3.1 Legal Status</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Kilifian4 Integrity and Sustainability Initiative (KISI)</td>
+        </tr>
+        <tr>
+            <td>Registration</td>
+            <td>[Registration Number], Societies Act, Cap 108</td>
+        </tr>
+        <tr>
+            <td>Date of Registration</td>
+            <td>2025</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>195 80108, Kilifi Kenya, Kibano, Mombasa–Malindi Road</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td>kilifian4cbo@yahoo.com</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>0720468616</td>
+        </tr>
+    </table>
+
+    <h3>3.2 Governance Structure</h3>
+    <table>
+        <tr>
+            <th>Position</th>
+            <th>Name</th>
+            <th>Responsibilities</th>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Mwanaidi Muhavi Ayumba</td>
+            <td>Overall leadership, representation, chairing meetings</td>
+        </tr>
+        <tr>
+            <td>Vice Chair</td>
+            <td>Isaac Masika Wekesa</td>
+            <td>Deputising, coordination, specific duties</td>
+        </tr>
+        <tr>
+            <td>Treasurer</td>
+            <td>Moses Isutsa Richard Shileche</td>
+            <td>Financial management, banking, reporting</td>
+        </tr>
+        <tr>
+            <td>Secretary</td>
+            <td>Silvia Stancy Njoki</td>
+            <td>Administration, correspondence, minutes</td>
+        </tr>
+        <tr>
+            <td>Vice Secretary</td>
+            <td>Mercyline Namaeso Wanyama</td>
+            <td>Assisting the Secretary</td>
+        </tr>
+        <tr>
+            <td>Committee Member</td>
+            <td>Fred Cmatete Wafula</td>
+            <td>Support to executive, project committees</td>
+        </tr>
+        <tr>
+            <td>Committee Member</td>
+            <td>Samson Baraka Charo</td>
+            <td>Support to executive, project committees</td>
+        </tr>
+    </table>
+
+    <h3>3.3 Membership</h3>
+    <p>KISI has 10 founding members, with a target of 100 members by 2031. Membership is open to Kenyan citizens in
+        Pwani University and its structured affiliates.</p>
+
+    <h3>3.4 Core Values</h3>
+    <table>
+        <tr>
+            <th>Value</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Affluence</td>
+            <td>Abundance of wealth, prosperity, happiness, well-being, and quality of life</td>
+        </tr>
+        <tr>
+            <td>Inclusivity</td>
+            <td>Collaboration with and responsiveness to diversity</td>
+        </tr>
+        <tr>
+            <td>Resilience</td>
+            <td>Strengthening communities against climate change, economic shocks, and social disruptions</td>
+        </tr>
+        <tr>
+            <td>Respect</td>
+            <td>Interacting and supporting all people fairly and honestly</td>
+        </tr>
+        <tr>
+            <td>Trust</td>
+            <td>Upholding public trust through responsible resource management</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s4">4. Vision, Mission, and Core Values</h2>
+    <h3>4.1 Vision</h3>
+    <p>To cultivate a global network of thriving, equitable, and resilient communities where human prosperity is in
+        harmony with planetary health, guided by unwavering integrity and intergenerational responsibility.</p>
+
+    <h3>4.2 Mission</h3>
+    <p>Our mission is to empower individuals, organisations, and governments to build sustainable societies by
+        championing ethical leadership, advancing innovative solutions, and fostering collaborative action. We simplify
+        complexity through our "Keep It Sustainable &amp; Sound" (KISS) framework, making sustainability accessible and
+        actionable for all.</p>
+
+    <h3>4.3 Motto</h3>
+    <p><strong>"Keep It Sustainable and Sound" (KISS)</strong></p>
+
+    <h3>4.4 Strategic Goals (2026–2031)</h3>
+    <ol>
+        <li>Empower 10,000 households with sustainable livelihoods.</li>
+        <li>Ensure 5,000 households access clean water.</li>
+        <li>Provide 1,000 women and youth with vocational skills.</li>
+        <li>Plant 100,000 trees across Kilifi County.</li>
+        <li>Reach 5,000 individuals with digital literacy.</li>
+        <li>Establish 5 elderly support centres.</li>
+        <li>Incubate 50 social enterprises.</li>
+        <li>Reduce waterborne diseases by 50% in target communities.</li>
+    </ol>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s5">5. Strategic Context and Analysis</h2>
+    <h3>5.1 PESTEL Analysis</h3>
+    <table>
+        <tr>
+            <th>Factor</th>
+            <th>Analysis</th>
+        </tr>
+        <tr>
+            <td>Political</td>
+            <td>Supportive policy environment (BETA, Vision 2030); devolved governance; political stability</td>
+        </tr>
+        <tr>
+            <td>Economic</td>
+            <td>High poverty rates; youth unemployment; informal economy; potential for circular economy; donor funding
+            </td>
+        </tr>
+        <tr>
+            <td>Social</td>
+            <td>Cultural diversity; gender inequality; community cohesion; youth bulge; ageing population</td>
+        </tr>
+        <tr>
+            <td>Technological</td>
+            <td>Digital divide; mobile phone penetration; renewable energy potential; e-waste challenges</td>
+        </tr>
+        <tr>
+            <td>Environmental</td>
+            <td>Climate change; drought; deforestation; water scarcity; biodiversity loss</td>
+        </tr>
+        <tr>
+            <td>Legal</td>
+            <td>Societies Act; Data Protection Act; Children Act; Employment Act; NEMA regulations</td>
+        </tr>
+    </table>
+
+    <h3>5.2 SWOT Analysis</h3>
+    <table>
+        <tr>
+            <th>STRENGTHS</th>
+            <th>WEAKNESSES</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Strong CBO leadership</li>
+                    <li>Community trust</li>
+                    <li>Multiple revenue streams</li>
+                    <li>Existing partnerships</li>
+                    <li>Proven track record</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Limited technical experience</li>
+                    <li>Small scale</li>
+                    <li>Dependence on grants</li>
+                    <li>Limited resources</li>
+                    <li>Limited visibility</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <th>OPPORTUNITIES</th>
+            <th>THREATS</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Growing demand for organic feed</li>
+                    <li>Government focus on youth/circular economy</li>
+                    <li>Partnership with ICIPE</li>
+                    <li>Social media visibility</li>
+                    <li>Scalability</li>
+                    <li>Water crisis awareness</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Neem toxicity risk</li>
+                    <li>Drought</li>
+                    <li>Scrap metal price inflation</li>
+                    <li>Cultural resistance</li>
+                    <li>Currency fluctuation</li>
+                    <li>COVID/resurgence</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+
+    <h3>5.3 Stakeholder Analysis</h3>
+    <table>
+        <tr>
+            <th>Stakeholder</th>
+            <th>Interest</th>
+            <th>Influence</th>
+            <th>Engagement Strategy</th>
+        </tr>
+        <tr>
+            <td>Community members</td>
+            <td>Improved livelihoods, health, water</td>
+            <td>High</td>
+            <td>Participatory planning, barazas</td>
+        </tr>
+        <tr>
+            <td>County Government</td>
+            <td>Development, licensing</td>
+            <td>High</td>
+            <td>Coordination meetings, compliance</td>
+        </tr>
+        <tr>
+            <td>ICIPE</td>
+            <td>Research, BSF promotion</td>
+            <td>Medium</td>
+            <td>Partnership agreement</td>
+        </tr>
+        <tr>
+            <td>Donors</td>
+            <td>Impact, accountability</td>
+            <td>High</td>
+            <td>Regular reporting, transparency</td>
+        </tr>
+        <tr>
+            <td>Women's groups</td>
+            <td>Income, empowerment</td>
+            <td>High</td>
+            <td>Training, leadership roles</td>
+        </tr>
+        <tr>
+            <td>Youth groups</td>
+            <td>Employment, skills</td>
+            <td>High</td>
+            <td>Training, entrepreneurship</td>
+        </tr>
+        <tr>
+            <td>CHVs</td>
+            <td>Health education</td>
+            <td>Medium</td>
+            <td>Training, supervision</td>
+        </tr>
+        <tr>
+            <td>Local businesses</td>
+            <td>Market access</td>
+            <td>Medium</td>
+            <td>Supplier agreements</td>
+        </tr>
+        <tr>
+            <td>Pwani University</td>
+            <td>Research, volunteers</td>
+            <td>Medium</td>
+            <td>MoU, student attachments</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 2 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part2">PART 2: STRATEGIC FRAMEWORK</h1>
+
+    <h2 class="section-title" id="s6">6. Strategic Pillars and Objectives</h2>
+
+    <h3>Pillar 1: Digital Libraries and Information Literacy</h3>
+    <p><em>Budget: GBP 50,000 | Responsible: Digital Literacy Lead</em></p>
+    <p><strong>Objectives:</strong></p>
+    <ul>
+        <li>Establish and maintain a network of accessible digital libraries.</li>
+        <li>Develop and deliver training programmes on digital literacy.</li>
+        <li>Foster a culture of self-directed learning.</li>
+    </ul>
+    <p><strong>Targets (2026–2031):</strong> 5 digital libraries established; 5,000 individuals trained in digital
+        literacy; 100 community information literacy workshops conducted; 1 digital repository with 10,000+ resources.
+    </p>
+
+    <h3>Pillar 2: Smart (LED) Agriculture for Smallholder Farmers</h3>
+    <p><em>Budget: GBP 60,000 | Responsible: Agriculture Lead</em></p>
+    <p><strong>Objectives:</strong></p>
+    <ul>
+        <li>Promote adoption of energy-efficient LED lighting.</li>
+        <li>Provide training on sustainable water and nutrient management.</li>
+        <li>Increase crop yield while reducing environmental impact.</li>
+    </ul>
+    <p><strong>Targets:</strong> 500 farmers trained; 100 LED kits distributed; 30% average yield increase; 50
+        demonstration farms established.</p>
+
+    <h3>Pillar 3: Crop Research and Feasibility Lab</h3>
+    <p><em>Budget: GBP 70,000 | Responsible: Research Lead</em></p>
+    <p><strong>Objectives:</strong> Research and develop resilient crop varieties; test soil and climate conditions;
+        bridge research and practical farming.</p>
+    <p><strong>Targets:</strong> 1 research lab; 10 crop varieties tested; 500 farmers advised; 5 research publications.
+    </p>
+
+    <h3>Pillar 4: Innovation and Incubation</h3>
+    <p><em>Budget: GBP 80,000 | Responsible: Innovation Lead</em></p>
+    <p><strong>Objectives:</strong> Provide mentorship, funding, and resources to entrepreneurs; facilitate connections
+        between innovators and markets; promote value addition.</p>
+    <p><strong>Targets:</strong> 50 startups incubated; 100 entrepreneurs trained; 20 value chains developed; 200 jobs
+        created.</p>
+
+    <h3>Pillar 5: Health, Water, and Green Energy</h3>
+    <p><em>Budget: GBP 100,000 | Responsible: Health, Water, and Energy Lead</em></p>
+    <p><strong>Objectives:</strong> Improve access to clean water and sanitation; promote preventative healthcare;
+        deploy affordable green energy solutions.</p>
+    <p><strong>Targets:</strong> 10,000 households access clean water; 20 water harvesting systems installed; 1,000
+        households adopt green energy; 50% reduction in waterborne diseases.</p>
+
+    <h3>Pillar 6: Women, Young Mothers, and Children</h3>
+    <p><em>Budget: GBP 60,000 | Responsible: Gender and Youth Lead</em></p>
+    <p><strong>Objectives:</strong> Provide educational support and scholarships; offer vocational training and
+        financial literacy; promote gender equality.</p>
+    <p><strong>Targets:</strong> 1,000 women trained; 500 young mothers supported; 200 scholarships awarded; 50%
+        increase in women's leadership roles.</p>
+
+    <h3>Pillar 7: Care for the Ageing</h3>
+    <p><em>Budget: GBP 30,000 | Responsible: Ageing Lead</em></p>
+    <p><strong>Objectives:</strong> Establish community-based day care centres; run mental wellness programmes; advocate
+        for elderly rights.</p>
+    <p><strong>Targets:</strong> 5 elderly support centres; 1,000 elderly persons supported; 50 advocacy campaigns; 100
+        caregivers trained.</p>
+
+    <h3>Pillar 8: Climate Resilience and E-Waste</h3>
+    <p><em>Budget: GBP 50,000 | Responsible: Environment Lead</em></p>
+    <p><strong>Objectives:</strong> Raise awareness on climate change; establish e-waste collection centres; promote
+        afforestation and conservation.</p>
+    <p><strong>Targets:</strong> 100,000 trees planted; 5 e-waste collection centres; 10,000 community members educated;
+        50% reduction in illegal e-waste disposal.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s7">7. Theory of Change</h2>
+    <div class="callout">
+        <p><strong>IF</strong> KISI establishes digital libraries, promotes smart agriculture, incubates social
+            enterprises, improves health and water access, empowers women and youth, provides care for the ageing, and
+            promotes climate resilience,</p>
+        <p><strong>THEN</strong> 10,000 households will have improved livelihoods, 5,000 households will access clean
+            water, 1,000 women and youth will have vocational skills, 100,000 trees will be planted, and waterborne
+            diseases will be reduced by 50%</p>
+        <p><strong>BECAUSE</strong> communities are engaged, partnerships are in place, M&amp;E systems track progress,
+            and leadership is committed,</p>
+        <p><strong>RESULTING IN</strong> thriving, equitable, resilient communities in Kilifi County.</p>
+    </div>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s8">8. Results Framework</h2>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Indicator</th>
+            <th>Target 2026</th>
+            <th>Target 2031</th>
+            <th>Data Source</th>
+        </tr>
+        <tr>
+            <td>Impact</td>
+            <td>Households with improved livelihoods</td>
+            <td>500</td>
+            <td>10,000</td>
+            <td>Survey</td>
+        </tr>
+        <tr>
+            <td>Impact</td>
+            <td>Households with clean water access</td>
+            <td>250</td>
+            <td>5,000</td>
+            <td>Water kiosk records</td>
+        </tr>
+        <tr>
+            <td>Impact</td>
+            <td>Trees planted</td>
+            <td>5,000</td>
+            <td>100,000</td>
+            <td>Tree planting register</td>
+        </tr>
+        <tr>
+            <td>Impact</td>
+            <td>Women in leadership</td>
+            <td>10</td>
+            <td>100</td>
+            <td>Committee records</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Individuals trained in digital literacy</td>
+            <td>250</td>
+            <td>5,000</td>
+            <td>Training register</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Farmers trained in smart agriculture</td>
+            <td>25</td>
+            <td>500</td>
+            <td>Training register</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Startups incubated</td>
+            <td>3</td>
+            <td>50</td>
+            <td>Incubation register</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Women trained in vocational skills</td>
+            <td>50</td>
+            <td>1,000</td>
+            <td>Training register</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>Elderly persons supported</td>
+            <td>50</td>
+            <td>1,000</td>
+            <td>Support centre records</td>
+        </tr>
+        <tr>
+            <td>Outcome</td>
+            <td>E-waste collected (kg)</td>
+            <td>500</td>
+            <td>10,000</td>
+            <td>Collection records</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>Digital libraries established</td>
+            <td>1</td>
+            <td>5</td>
+            <td>Project records</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>LED agriculture kits distributed</td>
+            <td>5</td>
+            <td>100</td>
+            <td>Distribution register</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>Crop varieties tested</td>
+            <td>1</td>
+            <td>10</td>
+            <td>Research records</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>Water harvesting systems installed</td>
+            <td>1</td>
+            <td>20</td>
+            <td>Installation records</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>Scholarships awarded</td>
+            <td>10</td>
+            <td>200</td>
+            <td>Scholarship register</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>Elderly support centres established</td>
+            <td>1</td>
+            <td>5</td>
+            <td>Project records</td>
+        </tr>
+        <tr>
+            <td>Output</td>
+            <td>E-waste collection centres</td>
+            <td>1</td>
+            <td>5</td>
+            <td>Project records</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 3 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part3">PART 3: IMPLEMENTATION</h1>
+
+    <h2 class="section-title" id="s9">9. Implementation Framework</h2>
+    <h3>9.1 Implementation Structure</h3>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Responsibility</th>
+        </tr>
+        <tr>
+            <td>Management Committee</td>
+            <td>Overall strategic oversight, policy approval, resource mobilisation</td>
+        </tr>
+        <tr>
+            <td>Executive Committee</td>
+            <td>Day-to-day management, coordination, reporting</td>
+        </tr>
+        <tr>
+            <td>Pillar Leads</td>
+            <td>Technical implementation, training, supervision</td>
+        </tr>
+        <tr>
+            <td>M&amp;E Officer</td>
+            <td>Data collection, analysis, reporting, learning</td>
+        </tr>
+        <tr>
+            <td>Finance Officer</td>
+            <td>Financial management, reporting, compliance</td>
+        </tr>
+        <tr>
+            <td>Community Mobilisers</td>
+            <td>Community engagement, mobilisation, training</td>
+        </tr>
+        <tr>
+            <td>Volunteers</td>
+            <td>Project implementation, community outreach</td>
+        </tr>
+        <tr>
+            <td>Partners</td>
+            <td>Technical support, co-funding, advocacy</td>
+        </tr>
+    </table>
+
+    <h3>9.2 Implementation Phases</h3>
+    <table>
+        <tr>
+            <th>Phase</th>
+            <th>Period</th>
+            <th>Focus</th>
+        </tr>
+        <tr>
+            <td>Phase 1: Foundation</td>
+            <td>2026–2027</td>
+            <td>Systems, policies, partnerships, pilot projects</td>
+        </tr>
+        <tr>
+            <td>Phase 2: Growth</td>
+            <td>2027–2029</td>
+            <td>Scale-up, expansion, deepening impact</td>
+        </tr>
+        <tr>
+            <td>Phase 3: Consolidation</td>
+            <td>2029–2031</td>
+            <td>Sustainability, institutionalisation, replication</td>
+        </tr>
+    </table>
+
+    <h3>9.3 Implementation Principles</h3>
+    <ul>
+        <li>Community-led and participatory</li>
+        <li>Gender-responsive and inclusive</li>
+        <li>Evidence-based and adaptive</li>
+        <li>Transparent and accountable</li>
+        <li>Environmentally sustainable</li>
+        <li>Locally appropriate and cost-effective</li>
+    </ul>
+
+    <h3>9.4 RACI Matrix</h3>
+    <p><em>R = Responsible, A = Accountable, C = Consulted, I = Informed</em></p>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Mgmt Committee</th>
+            <th>Exec Committee</th>
+            <th>Pillar Leads</th>
+            <th>M&amp;E Officer</th>
+            <th>Finance Officer</th>
+        </tr>
+        <tr>
+            <td>Strategic planning</td>
+            <td>A</td>
+            <td>R</td>
+            <td>C</td>
+            <td>C</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Budget approval</td>
+            <td>A</td>
+            <td>R</td>
+            <td>C</td>
+            <td>I</td>
+            <td>R</td>
+        </tr>
+        <tr>
+            <td>Project implementation</td>
+            <td>I</td>
+            <td>A</td>
+            <td>R</td>
+            <td>C</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Monitoring</td>
+            <td>I</td>
+            <td>A</td>
+            <td>C</td>
+            <td>R</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Evaluation</td>
+            <td>A</td>
+            <td>R</td>
+            <td>C</td>
+            <td>R</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>Financial reporting</td>
+            <td>A</td>
+            <td>R</td>
+            <td>I</td>
+            <td>I</td>
+            <td>R</td>
+        </tr>
+        <tr>
+            <td>Risk management</td>
+            <td>A</td>
+            <td>R</td>
+            <td>C</td>
+            <td>C</td>
+            <td>R</td>
+        </tr>
+        <tr>
+            <td>Stakeholder engagement</td>
+            <td>A</td>
+            <td>R</td>
+            <td>R</td>
+            <td>I</td>
+            <td>I</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s10">10. Detailed Activities and SOPs</h2>
+
+    <h3>10.1 Digital Libraries and Information Literacy</h3>
+    <p><strong>Activities:</strong> Needs assessment; secure and renovate library spaces; procure
+        computers/tablets/internet; recruit and train staff; develop digital literacy curricula; establish digital
+        repository; conduct outreach; monitor usage.</p>
+    <p><em>SOPs: SOP-DL-01 to SOP-DL-04</em></p>
+
+    <h3>10.2 Smart Agriculture</h3>
+    <p><strong>Activities:</strong> Identify farmers; baseline assessment; procure/distribute LED kits; train farmers;
+        establish demonstration farms; provide technical support; monitor yields and incomes.</p>
+    <p><em>SOPs: SOP-SA-01 to SOP-SA-04</em></p>
+
+    <h3>10.3 Crop Research and Feasibility Lab</h3>
+    <p><strong>Activities:</strong> Establish research lab; recruit research staff; identify priority crops; conduct
+        field trials and soil testing; analyse data; disseminate findings; publish research.</p>
+    <p><em>SOPs: SOP-CR-01 to SOP-CR-04</em></p>
+
+    <h3>10.4 Innovation and Incubation</h3>
+    <p><strong>Activities:</strong> Establish incubation centre; conduct outreach; screen startups; provide mentorship
+        and funding; facilitate market linkages; monitor growth; celebrate successes.</p>
+    <p><em>SOPs: SOP-IN-01 to SOP-IN-04</em></p>
+
+    <h3>10.5 Health, Water, and Green Energy</h3>
+    <p><strong>Activities:</strong> Needs assessment; establish water harvesting systems; set up water kiosks and
+        committees; promote hygiene; deploy solar and biogas; conduct health education; monitor water quality and
+        disease rates.</p>
+    <p><em>SOPs: SOP-HW-01 to SOP-HW-04</em></p>
+
+    <h3>10.6 Women, Young Mothers, and Children</h3>
+    <p><strong>Activities:</strong> Identify beneficiaries; provide scholarships; vocational training; financial
+        literacy; establish savings groups; provide mentorship; advocate for gender equality.</p>
+    <p><em>SOPs: SOP-GE-01 to SOP-GE-04</em></p>
+
+    <h3>10.7 Care for the Ageing</h3>
+    <p><strong>Activities:</strong> Identify elderly in need; establish day care centres; mental wellness programmes;
+        home visits and welfare checks; train caregivers; advocate for elderly rights.</p>
+    <p><em>SOPs: SOP-CA-01 to SOP-CA-04</em></p>
+
+    <h3>10.8 Climate Resilience and E-Waste</h3>
+    <p><strong>Activities:</strong> Awareness campaigns; tree planting drives; establish e-waste collection centres;
+        train youth in e-waste management; partner with NEMA and recyclers; monitor impact.</p>
+    <p><em>SOPs: SOP-EN-01 to SOP-EN-04</em></p>
+
+    <h3>10.9 Cross-Cutting SOPs</h3>
+    <ul>
+        <li>SOP-CC-01: Community mobilisation</li>
+        <li>SOP-CC-02: Financial management</li>
+        <li>SOP-CC-03: Procurement</li>
+        <li>SOP-CC-04: Safeguarding</li>
+        <li>SOP-CC-05: Data protection</li>
+        <li>SOP-CC-06: M&amp;E data collection</li>
+        <li>SOP-CC-07: Reporting</li>
+        <li>SOP-CC-08: Risk management</li>
+        <li>SOP-CC-09: Stakeholder engagement</li>
+        <li>SOP-CC-10: Complaints and feedback</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s11">11. Annual Work Plans and Almanac (2026–2031)</h2>
+
+    <h3>11.1 Annual Almanac</h3>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Activity</th>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>Annual planning; budget approval; staff retreat</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>Community mobilisation; baseline surveys</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>Q1 review; grant reporting; board meeting</td>
+        </tr>
+        <tr>
+            <td>April</td>
+            <td>Training delivery; project implementation</td>
+        </tr>
+        <tr>
+            <td>May</td>
+            <td>Monitoring visits; community barazas</td>
+        </tr>
+        <tr>
+            <td>June</td>
+            <td>Q2 review; mid-year evaluation; donor updates</td>
+        </tr>
+        <tr>
+            <td>July</td>
+            <td>Project implementation; partnerships</td>
+        </tr>
+        <tr>
+            <td>August</td>
+            <td>Training delivery; community outreach</td>
+        </tr>
+        <tr>
+            <td>September</td>
+            <td>Q3 review; board meeting; audit preparation</td>
+        </tr>
+        <tr>
+            <td>October</td>
+            <td>Annual audit; evaluation; learning event</td>
+        </tr>
+        <tr>
+            <td>November</td>
+            <td>Annual reporting; stakeholder forum</td>
+        </tr>
+        <tr>
+            <td>December</td>
+            <td>Annual review; planning for next year</td>
+        </tr>
+    </table>
+
+    <h3>11.2 Year 1 Work Plan (2026–2027)</h3>
+    <table>
+        <tr>
+            <th>Quarter</th>
+            <th>Activity</th>
+            <th>Responsible</th>
+            <th>Budget (GBP)</th>
+        </tr>
+        <tr>
+            <td>Q1</td>
+            <td>Finalise strategic plan</td>
+            <td>Management Committee</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>Q1</td>
+            <td>Develop operational plans</td>
+            <td>Executive Committee</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>Q1</td>
+            <td>Establish partnerships</td>
+            <td>Chairperson</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>Q1</td>
+            <td>Recruit and train staff</td>
+            <td>Management Committee</td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td>Q1</td>
+            <td>Baseline survey</td>
+            <td>M&amp;E Officer</td>
+            <td>4,000</td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>Launch pilot projects</td>
+            <td>Pillar Leads</td>
+            <td>15,000</td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>Establish M&amp;E system</td>
+            <td>M&amp;E Officer</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>Community mobilisation</td>
+            <td>Community Mobilisers</td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td>Q3</td>
+            <td>Implement pillar activities</td>
+            <td>Pillar Leads</td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td>Q3</td>
+            <td>Monitoring visits</td>
+            <td>M&amp;E Officer</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>Q3</td>
+            <td>Quarterly review</td>
+            <td>Management Committee</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Mid-year evaluation</td>
+            <td>M&amp;E Officer</td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Annual audit</td>
+            <td>Finance Officer</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Annual report</td>
+            <td>Executive Committee</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Stakeholder forum</td>
+            <td>Management Committee</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td><strong>TOTAL</strong></td>
+            <td></td>
+            <td></td>
+            <td><strong>75,000</strong></td>
+        </tr>
+    </table>
+
+    <h3>11.3 Five-Year Activity Summary</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Key Activities</th>
+            <th>Budget (GBP)</th>
+        </tr>
+        <tr>
+            <td>2026–2027</td>
+            <td>Foundation: systems, partnerships, pilots</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>2027–2028</td>
+            <td>Growth: scale-up, expansion</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>2028–2029</td>
+            <td>Growth: deepening impact, new pillars</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>2029–2030</td>
+            <td>Consolidation: sustainability, institutionalisation</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>2030–2031</td>
+            <td>Consolidation: replication, exit readiness</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td><strong>TOTAL</strong></td>
+            <td></td>
+            <td><strong>500,000</strong></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s12">12. Resource Mobilisation Strategy</h2>
+    <h3>12.1 Funding Sources</h3>
+    <table>
+        <tr>
+            <th>Source</th>
+            <th>Target (GBP)</th>
+            <th>Strategies</th>
+        </tr>
+        <tr>
+            <td>Grants</td>
+            <td>250,000</td>
+            <td>Proposals to Commonwealth Foundation, EU, USAID, DFID, foundations</td>
+        </tr>
+        <tr>
+            <td>Donations</td>
+            <td>50,000</td>
+            <td>Individual donors, corporate sponsorships, fundraising events</td>
+        </tr>
+        <tr>
+            <td>Social Enterprise</td>
+            <td>150,000</td>
+            <td>Neem paste sales, BSF larvae, chicken feed, water kiosks</td>
+        </tr>
+        <tr>
+            <td>Government Partnerships</td>
+            <td>50,000</td>
+            <td>County government, national government, devolved funds</td>
+        </tr>
+        <tr>
+            <td><strong>TOTAL</strong></td>
+            <td><strong>500,000</strong></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>12.2 Resource Mobilisation Plan</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Target (GBP)</th>
+            <th>Key Activities</th>
+        </tr>
+        <tr>
+            <td>2026–2027</td>
+            <td>100,000</td>
+            <td>Grant applications, pilot revenue generation</td>
+        </tr>
+        <tr>
+            <td>2027–2028</td>
+            <td>100,000</td>
+            <td>Grant renewals, expanded social enterprise</td>
+        </tr>
+        <tr>
+            <td>2028–2029</td>
+            <td>100,000</td>
+            <td>New grants, corporate partnerships</td>
+        </tr>
+        <tr>
+            <td>2029–2030</td>
+            <td>100,000</td>
+            <td>Social enterprise growth, government contracts</td>
+        </tr>
+        <tr>
+            <td>2030–2031</td>
+            <td>100,000</td>
+            <td>Sustainability, endowment building</td>
+        </tr>
+    </table>
+
+    <h3>12.3 Donor Engagement Strategy</h3>
+    <ul>
+        <li>Maintain a donor database.</li>
+        <li>Prepare tailored proposals for each donor.</li>
+        <li>Submit quarterly and annual reports.</li>
+        <li>Conduct donor visits to project sites.</li>
+        <li>Acknowledge donors in publications.</li>
+        <li>Comply with donor financial and M&amp;E requirements.</li>
+    </ul>
+
+    <h3>12.4 Social Enterprise Strategy</h3>
+    <ul>
+        <li>Neem paste production and sales.</li>
+        <li>BSF larvae and chicken feed production.</li>
+        <li>Water kiosk operations.</li>
+        <li>Digital library services.</li>
+        <li>Training and consultancy services.</li>
+        <li>Target: GBP 150,000 over 5 years.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s13">13. Detailed Budget (5 Years)</h2>
+
+    <h3>13.1 Five-Year Budget Summary (GBP)</h3>
+    <table>
+        <tr>
+            <th>Pillar</th>
+            <th>Year 1</th>
+            <th>Year 2</th>
+            <th>Year 3</th>
+            <th>Year 4</th>
+            <th>Year 5</th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td>Digital Libraries</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>50,000</td>
+        </tr>
+        <tr>
+            <td>Smart Agriculture</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>60,000</td>
+        </tr>
+        <tr>
+            <td>Crop Research</td>
+            <td>14,000</td>
+            <td>14,000</td>
+            <td>14,000</td>
+            <td>14,000</td>
+            <td>14,000</td>
+            <td>70,000</td>
+        </tr>
+        <tr>
+            <td>Innovation &amp; Incubation</td>
+            <td>16,000</td>
+            <td>16,000</td>
+            <td>16,000</td>
+            <td>16,000</td>
+            <td>16,000</td>
+            <td>80,000</td>
+        </tr>
+        <tr>
+            <td>Health, Water &amp; Energy</td>
+            <td>20,000</td>
+            <td>20,000</td>
+            <td>20,000</td>
+            <td>20,000</td>
+            <td>20,000</td>
+            <td>100,000</td>
+        </tr>
+        <tr>
+            <td>Women &amp; Youth</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>12,000</td>
+            <td>60,000</td>
+        </tr>
+        <tr>
+            <td>Care for Ageing</td>
+            <td>6,000</td>
+            <td>6,000</td>
+            <td>6,000</td>
+            <td>6,000</td>
+            <td>6,000</td>
+            <td>30,000</td>
+        </tr>
+        <tr>
+            <td>Climate &amp; E-Waste</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>10,000</td>
+            <td>50,000</td>
+        </tr>
+        <tr>
+            <td><strong>TOTAL</strong></td>
+            <td><strong>100,000</strong></td>
+            <td><strong>100,000</strong></td>
+            <td><strong>100,000</strong></td>
+            <td><strong>100,000</strong></td>
+            <td><strong>100,000</strong></td>
+            <td><strong>500,000</strong></td>
+        </tr>
+    </table>
+
+    <h3>13.2 Year 1 Detailed Budget (GBP)</h3>
+    <table>
+        <tr>
+            <th>Budget Line</th>
+            <th>Description</th>
+            <th>Amount (GBP)</th>
+        </tr>
+        <tr>
+            <td>A. Personnel</td>
+            <td></td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Project Coordinator</td>
+            <td>6 months part-time</td>
+            <td>6,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;M&amp;E Officer</td>
+            <td>12 months</td>
+            <td>8,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Finance Officer</td>
+            <td>12 months part-time</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Community Mobilisers</td>
+            <td>3 staff, 12 months</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>B. Training &amp; Capacity Building</td>
+            <td></td>
+            <td>15,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Youth training</td>
+            <td>50 youth, 10 days</td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Women training</td>
+            <td>100 women, 5 days</td>
+            <td>4,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Farmer training</td>
+            <td>100 farmers, 3 days</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Water technician training</td>
+            <td>20 technicians</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;CHV training</td>
+            <td>20 CHVs</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Sensitisation barazas</td>
+            <td>10 barazas</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>C. Equipment &amp; Materials</td>
+            <td></td>
+            <td>20,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Digital library equipment</td>
+            <td>Computers, tablets, furniture</td>
+            <td>8,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;LED agriculture kits</td>
+            <td>20 kits</td>
+            <td>4,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;BSF starter kits</td>
+            <td>50 kits</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Neem processing tools</td>
+            <td>Grinding, drying</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Water harvesting materials</td>
+            <td>Tanks, gutters</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>D. Water Infrastructure</td>
+            <td></td>
+            <td>15,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Borehole drilling</td>
+            <td>150m</td>
+            <td>6,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Solar pumping system</td>
+            <td>15 kW</td>
+            <td>4,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Reverse osmosis unit</td>
+            <td>100,000 L/day</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Storage tanks</td>
+            <td>2 × 100,000 L</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Water kiosks</td>
+            <td>20 units</td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>E. Operations</td>
+            <td></td>
+            <td>10,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Communication</td>
+            <td>Airtime, internet</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Documentation</td>
+            <td>Video/photo</td>
+            <td>1,500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Transport</td>
+            <td>Field visits</td>
+            <td>3,500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Utilities</td>
+            <td>Electricity, water</td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>F. Statutory &amp; Regulatory</td>
+            <td></td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;NEMA license</td>
+            <td></td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;County license</td>
+            <td></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;OSHA license</td>
+            <td></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;VAT</td>
+            <td></td>
+            <td>1,500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Import duty</td>
+            <td></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Withholding tax</td>
+            <td></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Bank charges</td>
+            <td></td>
+            <td>500</td>
+        </tr>
+        <tr>
+            <td>G. Land &amp; Construction</td>
+            <td></td>
+            <td>8,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Land rent</td>
+            <td>1 acre, 12 months</td>
+            <td>3,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Building construction</td>
+            <td>Office, store</td>
+            <td>4,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Renovation</td>
+            <td></td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>H. Financial Costs</td>
+            <td></td>
+            <td>2,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Exchange rate fluctuation</td>
+            <td></td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>&nbsp;&nbsp;Audit fees</td>
+            <td></td>
+            <td>1,000</td>
+        </tr>
+        <tr>
+            <td>I. Administrative Overhead</td>
+            <td>5% of direct costs</td>
+            <td>5,000</td>
+        </tr>
+        <tr>
+            <td><strong>TOTAL</strong></td>
+            <td></td>
+            <td><strong>100,000</strong></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 4 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part4">PART 4: MONITORING, EVALUATION, AND LEARNING</h1>
+
+    <h2 class="section-title" id="s14">14. M&amp;E Framework</h2>
+    <h3>14.1 Purpose of M&amp;E</h3>
+    <p>The M&amp;E framework ensures that KISI tracks progress, measures impact, identifies challenges, ensures
+        accountability, and documents lessons learned.</p>
+
+    <h3>14.2 M&amp;E Principles</h3>
+    <ul>
+        <li>Results-based</li>
+        <li>Participatory</li>
+        <li>Gender-sensitive</li>
+        <li>Utilisation-focused</li>
+        <li>Ethical and safe</li>
+        <li>Integrated into all activities</li>
+    </ul>
+
+    <h3>14.3 M&amp;E Structure</h3>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Responsibility</th>
+        </tr>
+        <tr>
+            <td>Management Committee</td>
+            <td>Overall oversight; approve M&amp;E plan; review reports</td>
+        </tr>
+        <tr>
+            <td>M&amp;E Officer</td>
+            <td>Design M&amp;E tools; collect and analyse data; report</td>
+        </tr>
+        <tr>
+            <td>Pillar Leads</td>
+            <td>Collect output data; support outcome monitoring</td>
+        </tr>
+        <tr>
+            <td>Community Mobilisers</td>
+            <td>Collect field data; community feedback</td>
+        </tr>
+        <tr>
+            <td>Beneficiaries</td>
+            <td>Participate in data collection; provide feedback</td>
+        </tr>
+        <tr>
+            <td>External Evaluators</td>
+            <td>Conduct independent evaluations</td>
+        </tr>
+    </table>
+
+    <h3>14.4 M&amp;E Processes</h3>
+    <ol>
+        <li>Baseline survey (Year 1)</li>
+        <li>Monthly data collection and reporting</li>
+        <li>Quarterly review meetings</li>
+        <li>Mid-year evaluations</li>
+        <li>Annual reviews</li>
+        <li>Mid-term evaluation (Year 3)</li>
+        <li>End-term evaluation (Year 5)</li>
+        <li>Learning events and documentation</li>
+    </ol>
+
+    <h3>14.5 Data Management</h3>
+    <ul>
+        <li>Data collection tools: surveys, interviews, focus groups, observation, records review.</li>
+        <li>Data storage: secure electronic and physical systems.</li>
+        <li>Data quality: regular verification, triangulation, and audits.</li>
+        <li>Data protection: compliance with Kenya Data Protection Act 2019.</li>
+        <li>Data sharing: only with consent; anonymised for reporting.</li>
+    </ul>
+
+    <h3>14.6 Reporting</h3>
+    <ul>
+        <li>Monthly progress reports (internal).</li>
+        <li>Quarterly financial and programmatic reports (donors).</li>
+        <li>Annual reports (AGM, donors, stakeholders).</li>
+        <li>Evaluation reports (mid-term, end-term).</li>
+        <li>Learning briefs and case studies.</li>
+    </ul>
+
+    <h3>14.7 Evaluation Plan</h3>
+    <table>
+        <tr>
+            <th>Evaluation</th>
+            <th>Timing</th>
+            <th>Purpose</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>Baseline</td>
+            <td>Month 1–3</td>
+            <td>Establish benchmarks</td>
+            <td>M&amp;E Officer + External</td>
+        </tr>
+        <tr>
+            <td>Mid-year</td>
+            <td>Month 6, 18, 30, 42</td>
+            <td>Review progress; adjust</td>
+            <td>M&amp;E Officer</td>
+        </tr>
+        <tr>
+            <td>Mid-term</td>
+            <td>Month 30</td>
+            <td>Comprehensive review</td>
+            <td>External Evaluator</td>
+        </tr>
+        <tr>
+            <td>End-term</td>
+            <td>Month 60</td>
+            <td>Assess impact</td>
+            <td>External Evaluator</td>
+        </tr>
+        <tr>
+            <td>Annual</td>
+            <td>Every December</td>
+            <td>Review year; plan next</td>
+            <td>Management Committee</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s15">15. Key Performance Indicators (KPIs)</h2>
+
+    <h3>15.1 Impact KPIs</h3>
+    <table>
+        <tr>
+            <th>KPI</th>
+            <th>Baseline</th>
+            <th>Y1</th>
+            <th>Y3</th>
+            <th>Y5</th>
+            <th>Data Source</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Households with improved livelihoods</td>
+            <td>0</td>
+            <td>500</td>
+            <td>5,000</td>
+            <td>10,000</td>
+            <td>Survey</td>
+            <td>Annual</td>
+        </tr>
+        <tr>
+            <td>Households with clean water access</td>
+            <td>0</td>
+            <td>250</td>
+            <td>2,500</td>
+            <td>5,000</td>
+            <td>Water records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Trees planted</td>
+            <td>0</td>
+            <td>5,000</td>
+            <td>50,000</td>
+            <td>100,000</td>
+            <td>Tree register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Women in leadership roles</td>
+            <td>0</td>
+            <td>10</td>
+            <td>50</td>
+            <td>100</td>
+            <td>Committee records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Reduction in waterborne diseases</td>
+            <td>0%</td>
+            <td>10%</td>
+            <td>30%</td>
+            <td>50%</td>
+            <td>Health records</td>
+            <td>Annual</td>
+        </tr>
+        <tr>
+            <td>Household income increase</td>
+            <td>0%</td>
+            <td>10%</td>
+            <td>25%</td>
+            <td>40%</td>
+            <td>Survey</td>
+            <td>Annual</td>
+        </tr>
+    </table>
+
+    <h3>15.2 Outcome KPIs</h3>
+    <table>
+        <tr>
+            <th>KPI</th>
+            <th>Baseline</th>
+            <th>Y1</th>
+            <th>Y3</th>
+            <th>Y5</th>
+            <th>Data Source</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Individuals trained in digital literacy</td>
+            <td>0</td>
+            <td>250</td>
+            <td>2,500</td>
+            <td>5,000</td>
+            <td>Training register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Farmers trained in smart agriculture</td>
+            <td>0</td>
+            <td>25</td>
+            <td>250</td>
+            <td>500</td>
+            <td>Training register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Startups incubated</td>
+            <td>0</td>
+            <td>3</td>
+            <td>25</td>
+            <td>50</td>
+            <td>Incubation register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Women trained in vocational skills</td>
+            <td>0</td>
+            <td>50</td>
+            <td>500</td>
+            <td>1,000</td>
+            <td>Training register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Elderly persons supported</td>
+            <td>0</td>
+            <td>50</td>
+            <td>500</td>
+            <td>1,000</td>
+            <td>Centre records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>E-waste collected (kg)</td>
+            <td>0</td>
+            <td>500</td>
+            <td>5,000</td>
+            <td>10,000</td>
+            <td>Collection records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Value chains developed</td>
+            <td>0</td>
+            <td>1</td>
+            <td>10</td>
+            <td>20</td>
+            <td>Value chain register</td>
+            <td>Annual</td>
+        </tr>
+        <tr>
+            <td>Jobs created</td>
+            <td>0</td>
+            <td>10</td>
+            <td>100</td>
+            <td>200</td>
+            <td>Employment records</td>
+            <td>Annual</td>
+        </tr>
+    </table>
+
+    <h3>15.3 Output KPIs</h3>
+    <table>
+        <tr>
+            <th>KPI</th>
+            <th>Y1</th>
+            <th>Y3</th>
+            <th>Y5</th>
+            <th>Data Source</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Digital libraries established</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Project records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>LED agriculture kits distributed</td>
+            <td>5</td>
+            <td>50</td>
+            <td>100</td>
+            <td>Distribution register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Crop varieties tested</td>
+            <td>1</td>
+            <td>5</td>
+            <td>10</td>
+            <td>Research records</td>
+            <td>Annual</td>
+        </tr>
+        <tr>
+            <td>Water harvesting systems installed</td>
+            <td>1</td>
+            <td>10</td>
+            <td>20</td>
+            <td>Installation records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Scholarships awarded</td>
+            <td>10</td>
+            <td>100</td>
+            <td>200</td>
+            <td>Scholarship register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Elderly support centres established</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Project records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>E-waste collection centres</td>
+            <td>1</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Project records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Community barazas conducted</td>
+            <td>20</td>
+            <td>100</td>
+            <td>200</td>
+            <td>Baraza register</td>
+            <td>Quarterly</td>
+        </tr>
+    </table>
+
+    <h3>15.4 Process KPIs</h3>
+    <table>
+        <tr>
+            <th>KPI</th>
+            <th>Target</th>
+            <th>Data Source</th>
+            <th>Frequency</th>
+        </tr>
+        <tr>
+            <td>Quarterly reports submitted</td>
+            <td>100%</td>
+            <td>Donor records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Annual audits completed</td>
+            <td>100%</td>
+            <td>Audit reports</td>
+            <td>Annually</td>
+        </tr>
+        <tr>
+            <td>Budget variance</td>
+            <td>&lt;10%</td>
+            <td>Financial records</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Staff trained in safeguarding</td>
+            <td>100%</td>
+            <td>Training register</td>
+            <td>Annually</td>
+        </tr>
+        <tr>
+            <td>Community feedback received</td>
+            <td>100 per year</td>
+            <td>Feedback register</td>
+            <td>Quarterly</td>
+        </tr>
+        <tr>
+            <td>Stakeholder engagement meetings</td>
+            <td>4 per year</td>
+            <td>Meeting minutes</td>
+            <td>Quarterly</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s16">16. Key Risk Indicators (KRIs)</h2>
+    <table>
+        <tr>
+            <th>KRI</th>
+            <th>Risk</th>
+            <th>Threshold</th>
+            <th>Mitigation</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>Funding shortfall</td>
+            <td>Insufficient funds</td>
+            <td>&gt;20% below target</td>
+            <td>Diversify funding; reserves</td>
+            <td>Finance Officer</td>
+        </tr>
+        <tr>
+            <td>Currency fluctuation</td>
+            <td>KES/GBP rate change</td>
+            <td>&gt;10% change</td>
+            <td>Hedge; local sourcing</td>
+            <td>Finance Officer</td>
+        </tr>
+        <tr>
+            <td>Drought</td>
+            <td>Water scarcity</td>
+            <td>&lt;50% rainfall</td>
+            <td>Water harvesting; storage</td>
+            <td>Water Lead</td>
+        </tr>
+        <tr>
+            <td>Neem toxicity</td>
+            <td>Ingestion sickness</td>
+            <td>&gt;1 case</td>
+            <td>Education; warning symbols</td>
+            <td>Health Lead</td>
+        </tr>
+        <tr>
+            <td>Scrap material shortage</td>
+            <td>Price increase</td>
+            <td>&gt;30% increase</td>
+            <td>Community scrap bank</td>
+            <td>Procurement Officer</td>
+        </tr>
+        <tr>
+            <td>BSF colony collapse</td>
+            <td>Larvae harvest drop</td>
+            <td>&lt;20 kg/week</td>
+            <td>Backup colony</td>
+            <td>Agriculture Lead</td>
+        </tr>
+        <tr>
+            <td>Water plant breakdown</td>
+            <td>Downtime</td>
+            <td>&gt;48 hours</td>
+            <td>Spare parts; technicians</td>
+            <td>Water Lead</td>
+        </tr>
+        <tr>
+            <td>Market rejection</td>
+            <td>Unsold products</td>
+            <td>&gt;20% inventory</td>
+            <td>Pre-sell; quality</td>
+            <td>Enterprise Lead</td>
+        </tr>
+        <tr>
+            <td>Community conflict</td>
+            <td>Disputes</td>
+            <td>&gt;2 cases/month</td>
+            <td>Inclusive governance</td>
+            <td>Chairperson</td>
+        </tr>
+        <tr>
+            <td>Staff turnover</td>
+            <td>Resignations</td>
+            <td>&gt;20% annually</td>
+            <td>Competitive pay; training</td>
+            <td>HR Lead</td>
+        </tr>
+        <tr>
+            <td>Data breach</td>
+            <td>Loss of personal data</td>
+            <td>Any incident</td>
+            <td>Encryption; training</td>
+            <td>Data Officer</td>
+        </tr>
+        <tr>
+            <td>Safeguarding incident</td>
+            <td>Any harm</td>
+            <td>Any case</td>
+            <td>Policy; training; reporting</td>
+            <td>Safeguarding Focal Point</td>
+        </tr>
+        <tr>
+            <td>COVID/resurgence</td>
+            <td>Gatherings halted</td>
+            <td>Any restriction</td>
+            <td>Virtual training; PPE</td>
+            <td>Project Coordinator</td>
+        </tr>
+        <tr>
+            <td>Political instability</td>
+            <td>Election violence</td>
+            <td>Any disruption</td>
+            <td>Contingency plans</td>
+            <td>Chairperson</td>
+        </tr>
+        <tr>
+            <td>Regulatory change</td>
+            <td>New law</td>
+            <td>Any change</td>
+            <td>Legal advice; compliance</td>
+            <td>Secretary</td>
+        </tr>
+        <tr>
+            <td>Climate change</td>
+            <td>Extreme weather</td>
+            <td>Any event</td>
+            <td>Climate-smart practices</td>
+            <td>Environment Lead</td>
+        </tr>
+        <tr>
+            <td>Cyber attack</td>
+            <td>Data/system breach</td>
+            <td>Any attempt</td>
+            <td>Firewalls; backups</td>
+            <td>Data Officer</td>
+        </tr>
+        <tr>
+            <td>Theft/fraud</td>
+            <td>Loss of funds/assets</td>
+            <td>Any case</td>
+            <td>Controls; audits</td>
+            <td>Treasurer</td>
+        </tr>
+        <tr>
+            <td>Fuel/transport costs</td>
+            <td>Price increase</td>
+            <td>&gt;20% increase</td>
+            <td>Local sourcing; bulk</td>
+            <td>Procurement Officer</td>
+        </tr>
+        <tr>
+            <td>Community resistance</td>
+            <td>Cultural barriers</td>
+            <td>Any resistance</td>
+            <td>Dialogue; engagement</td>
+            <td>Community Mobiliser</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s17">17. Risk Management Framework</h2>
+    <h3>17.1 Approach</h3>
+    <p>KISI adopts a proactive risk management approach that identifies, assesses, mitigates, monitors, and reviews
+        risks continuously. The Risk Register is maintained by the Finance Officer and reviewed quarterly by the
+        Management Committee.</p>
+
+    <h3>17.2 Risk Categories</h3>
+    <ul>
+        <li>Strategic risks</li>
+        <li>Operational risks</li>
+        <li>Financial risks</li>
+        <li>Compliance risks</li>
+        <li>Safeguarding risks</li>
+        <li>Environmental risks</li>
+        <li>Reputational risks</li>
+    </ul>
+
+    <h3>17.3 Risk Assessment Matrix</h3>
+    <table>
+        <tr>
+            <th>Likelihood</th>
+            <th>Impact</th>
+            <th>Risk Level</th>
+        </tr>
+        <tr>
+            <td>Very likely</td>
+            <td>Severe</td>
+            <td>Extreme</td>
+        </tr>
+        <tr>
+            <td>Likely</td>
+            <td>Major</td>
+            <td>Extreme</td>
+        </tr>
+        <tr>
+            <td>Possible</td>
+            <td>Moderate</td>
+            <td>High</td>
+        </tr>
+        <tr>
+            <td>Unlikely</td>
+            <td>Minor</td>
+            <td>Medium</td>
+        </tr>
+        <tr>
+            <td>Very unlikely</td>
+            <td>Negligible</td>
+            <td>Low</td>
+        </tr>
+    </table>
+
+    <h3>17.4 Risk Review</h3>
+    <ul>
+        <li>Quarterly review by Management Committee.</li>
+        <li>Annual comprehensive risk assessment.</li>
+        <li>Ad hoc review as needed.</li>
+        <li>Documentation of lessons learned.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s18">18. Learning and Adaptive Management</h2>
+    <h3>18.1 Learning Approach</h3>
+    <ul>
+        <li>Documenting lessons learned.</li>
+        <li>Sharing best practices.</li>
+        <li>Conducting after-action reviews.</li>
+        <li>Participating in learning networks.</li>
+        <li>Publishing case studies and reports.</li>
+    </ul>
+
+    <h3>18.2 Adaptive Management</h3>
+    <ul>
+        <li>Quarterly reviews to assess progress and adjust.</li>
+        <li>Flexibility to respond to emerging challenges.</li>
+        <li>Evidence-based decision-making.</li>
+        <li>Stakeholder feedback loops.</li>
+        <li>Regular reflection meetings.</li>
+    </ul>
+
+    <h3>18.3 Knowledge Management</h3>
+    <ul>
+        <li>Central repository for documents.</li>
+        <li>Regular updates to policies and SOPs.</li>
+        <li>Documentation of success stories.</li>
+        <li>Knowledge sharing forums.</li>
+        <li>Integration of lessons into planning.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 5 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part5">PART 5: GOVERNANCE AND COMPLIANCE</h1>
+
+    <h2 class="section-title" id="s19">19. Regulatory Framework</h2>
+    <h3>19.1 National Laws and Regulations</h3>
+    <table>
+        <tr>
+            <th>Law</th>
+            <th>Relevance</th>
+        </tr>
+        <tr>
+            <td>Constitution of Kenya 2010</td>
+            <td>Fundamental rights; freedom of association; equality</td>
+        </tr>
+        <tr>
+            <td>Societies Act (Cap 108)</td>
+            <td>Registration and governance of CBOs</td>
+        </tr>
+        <tr>
+            <td>Public Benefit Organisations Act 2013</td>
+            <td>Regulation of non-profits</td>
+        </tr>
+        <tr>
+            <td>NGO Coordination Act 1990</td>
+            <td>Coordination of NGOs</td>
+        </tr>
+        <tr>
+            <td>Children Act 2022</td>
+            <td>Child protection and welfare</td>
+        </tr>
+        <tr>
+            <td>Sexual Offences Act 2006</td>
+            <td>Sexual offences and protection</td>
+        </tr>
+        <tr>
+            <td>Employment Act 2007</td>
+            <td>Employment relations and labour standards</td>
+        </tr>
+        <tr>
+            <td>Occupational Safety and Health Act (OSHA) 2007</td>
+            <td>Workplace safety</td>
+        </tr>
+        <tr>
+            <td>Work Injury Benefits Act (WIBA) 2007</td>
+            <td>Compensation for work injuries</td>
+        </tr>
+        <tr>
+            <td>Data Protection Act 2019</td>
+            <td>Protection of personal data</td>
+        </tr>
+        <tr>
+            <td>Computer Misuse and Cybercrimes Act 2018</td>
+            <td>Cybersecurity and online conduct</td>
+        </tr>
+        <tr>
+            <td>Public Procurement and Asset Disposal Act 2015</td>
+            <td>Procurement of goods and services</td>
+        </tr>
+        <tr>
+            <td>Public Finance Management Act 2012</td>
+            <td>Financial management and accountability</td>
+        </tr>
+        <tr>
+            <td>Income Tax Act (Cap 470)</td>
+            <td>Taxation</td>
+        </tr>
+        <tr>
+            <td>Value Added Tax Act 2013</td>
+            <td>VAT</td>
+        </tr>
+        <tr>
+            <td>Environmental Management and Coordination Act (EMCA) 1999</td>
+            <td>Environmental protection</td>
+        </tr>
+        <tr>
+            <td>Water Act 2016</td>
+            <td>Water resources management</td>
+        </tr>
+        <tr>
+            <td>Persons with Disabilities Act 2003</td>
+            <td>Rights and inclusion of persons with disabilities</td>
+        </tr>
+        <tr>
+            <td>Gender Equality and Development Act</td>
+            <td>Gender equality</td>
+        </tr>
+        <tr>
+            <td>Protection Against Domestic Violence Act 2015</td>
+            <td>GBV prevention and response</td>
+        </tr>
+        <tr>
+            <td>Anti-Corruption and Economic Crimes Act 2003</td>
+            <td>Anti-corruption</td>
+        </tr>
+        <tr>
+            <td>Bribery Act 2016</td>
+            <td>Bribery prevention</td>
+        </tr>
+        <tr>
+            <td>Public Officer Ethics Act 2003</td>
+            <td>Ethics for public officers</td>
+        </tr>
+        <tr>
+            <td>Penal Code (Cap 63)</td>
+            <td>Criminal offences</td>
+        </tr>
+        <tr>
+            <td>Climate Change Act 2016</td>
+            <td>Climate change response</td>
+        </tr>
+    </table>
+
+    <h3>19.2 County Regulations</h3>
+    <ul>
+        <li>Kilifi County Integrated Development Plan (CIDP) 2023–2027</li>
+        <li>Kilifi County Trade Licensing Act</li>
+        <li>Kilifi County Public Health Act</li>
+        <li>Kilifi County Water and Sanitation Act</li>
+    </ul>
+
+    <h3>19.3 International Frameworks</h3>
+    <ul>
+        <li>Universal Declaration of Human Rights</li>
+        <li>UN Convention on the Rights of the Child (CRC)</li>
+        <li>UN Convention on the Elimination of All Forms of Discrimination Against Women (CEDAW)</li>
+        <li>Sustainable Development Goals (SDGs)</li>
+        <li>Paris Agreement on Climate Change</li>
+        <li>Commonwealth Charter</li>
+        <li>Africa Union Agenda 2063</li>
+    </ul>
+
+    <h3>19.4 Compliance Requirements</h3>
+    <ul>
+        <li>Annual returns to Registrar of Societies.</li>
+        <li>Tax returns to Kenya Revenue Authority (KRA).</li>
+        <li>NEMA licenses for environmental activities.</li>
+        <li>OSHA compliance.</li>
+        <li>Data Protection registration with ODPC.</li>
+        <li>County licenses and permits.</li>
+        <li>Donor compliance requirements.</li>
+    </ul>
+
+    <h3>19.5 Compliance Monitoring</h3>
+    <ul>
+        <li>Designated Compliance Officer: Secretary.</li>
+        <li>Quarterly compliance review.</li>
+        <li>Annual compliance audit.</li>
+        <li>Documentation of compliance activities.</li>
+        <li>Corrective action plans for non-compliance.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s20">20. Policies, Rules, and Guidelines</h2>
+    <p>KISI has developed a comprehensive suite of policies, rules, and guidelines to govern its operations. These
+        documents are maintained as separate manuals and include:</p>
+
+    <h3>20.1 Governance Policies</h3>
+    <ul>
+        <li>KISI Constitution (2025)</li>
+        <li>Code of Conduct</li>
+        <li>Conflict of Interest Policy</li>
+        <li>Anti-Fraud and Anti-Corruption Policy</li>
+        <li>Whistleblowing Policy</li>
+        <li>Complaints and Feedback Policy</li>
+        <li>Records Management Policy</li>
+    </ul>
+
+    <h3>20.2 Operational Policies</h3>
+    <ul>
+        <li>Financial Management Policy</li>
+        <li>Procurement Policy</li>
+        <li>Asset Management Policy</li>
+        <li>Human Resources Policy</li>
+        <li>Volunteer Management Policy</li>
+        <li>Health and Safety Policy</li>
+        <li>Environmental Policy</li>
+        <li>Transport Policy</li>
+    </ul>
+
+    <h3>20.3 Safeguarding and Ethics</h3>
+    <ul>
+        <li>Safeguarding Policy</li>
+        <li>Child Protection Policy</li>
+        <li>Gender Equality Policy</li>
+        <li>Data Protection Policy</li>
+        <li>Anti-Harassment Policy</li>
+        <li>Disability Inclusion Policy</li>
+    </ul>
+
+    <h3>20.4 Programme Policies</h3>
+    <ul>
+        <li>M&amp;E Policy</li>
+        <li>Knowledge Management Policy</li>
+        <li>Partnership Policy</li>
+        <li>Donor Engagement Policy</li>
+        <li>Communications Policy</li>
+    </ul>
+
+    <h3>20.5 Rules and Guidelines</h3>
+    <ul>
+        <li>Financial Procedures Manual</li>
+        <li>Procurement Manual</li>
+        <li>M&amp;E Manual</li>
+        <li>Safeguarding Manual (with annexes A–E)</li>
+        <li>Standard Operating Procedures (SOPs)</li>
+        <li>Staff Handbook</li>
+        <li>Volunteer Handbook</li>
+        <li>Community Engagement Guidelines</li>
+        <li>Gender Mainstreaming Guidelines</li>
+        <li>Environmental Sustainability Guidelines</li>
+    </ul>
+
+    <h3>20.6 Governance Rules</h3>
+    <ul>
+        <li>Meeting procedures (Robert's Rules of Order)</li>
+        <li>Quorum rules</li>
+        <li>Voting rules</li>
+        <li>Code of ethics for office bearers</li>
+        <li>Conflict of interest rules</li>
+        <li>Disciplinary procedures</li>
+        <li>Grievance procedures</li>
+        <li>Succession planning rules</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s21">21. Financial Management and Controls</h2>
+    <h3>21.1 Financial Management Principles</h3>
+    <ul>
+        <li>Accountability</li>
+        <li>Transparency</li>
+        <li>Integrity</li>
+        <li>Compliance</li>
+        <li>Value for money</li>
+        <li>Segregation of duties</li>
+    </ul>
+
+    <h3>21.2 Financial Controls</h3>
+    <ul>
+        <li>Dual signatories on all bank accounts.</li>
+        <li>Monthly bank reconciliations.</li>
+        <li>Quarterly financial reports.</li>
+        <li>Annual external audits.</li>
+        <li>Internal audits quarterly.</li>
+        <li>Procurement controls (three quotations).</li>
+        <li>Cash management controls (petty cash limit, receipts).</li>
+        <li>Asset register maintenance.</li>
+        <li>Budget vs actual analysis.</li>
+    </ul>
+
+    <h3>21.3 Financial Reporting</h3>
+    <ul>
+        <li>Monthly financial reports to Management Committee.</li>
+        <li>Quarterly financial reports to donors.</li>
+        <li>Annual financial statements to AGM.</li>
+        <li>Project-specific financial reports.</li>
+    </ul>
+
+    <h3>21.4 Auditing</h3>
+    <ul>
+        <li>Internal audit quarterly.</li>
+        <li>External audit annually.</li>
+        <li>Donor audits as required.</li>
+        <li>Follow-up on audit recommendations.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s22">22. Procurement and Asset Management</h2>
+    <h3>22.1 Procurement Principles</h3>
+    <ul>
+        <li>Transparency</li>
+        <li>Competition</li>
+        <li>Value for money</li>
+        <li>Fairness</li>
+        <li>Accountability</li>
+    </ul>
+
+    <h3>22.2 Procurement Procedures</h3>
+    <ol>
+        <li>Requisition</li>
+        <li>Approval</li>
+        <li>Solicitation (3 quotations for KES 5,000–20,000; competitive bidding above KES 20,000)</li>
+        <li>Evaluation</li>
+        <li>Award</li>
+        <li>Contracting</li>
+        <li>Delivery</li>
+        <li>Payment</li>
+        <li>Filing</li>
+    </ol>
+
+    <h3>22.3 Asset Management</h3>
+    <ul>
+        <li>Asset register maintained.</li>
+        <li>Assets tagged and verified annually.</li>
+        <li>Maintenance schedules.</li>
+        <li>Disposal procedures.</li>
+        <li>Insurance where appropriate.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s23">23. Safeguarding and Ethics</h2>
+    <h3>23.1 Safeguarding Commitment</h3>
+    <p>KISI has zero tolerance for harm, abuse, exploitation, and neglect of children and vulnerable adults. The
+        Safeguarding Policy and its annexes (A–E) provide detailed procedures.</p>
+
+    <h3>23.2 Ethical Standards</h3>
+    <ul>
+        <li>Integrity</li>
+        <li>Respect</li>
+        <li>Confidentiality</li>
+        <li>Non-discrimination</li>
+        <li>Accountability</li>
+        <li>Transparency</li>
+    </ul>
+
+    <h3>23.3 Code of Conduct</h3>
+    <p>All KISI office bearers, staff, volunteers, and partners must comply with the Code of Conduct.</p>
+
+    <h3>23.4 Reporting Mechanisms</h3>
+    <ul>
+        <li>Safeguarding Focal Point.</li>
+        <li>Whistleblowing channels.</li>
+        <li>Complaints and feedback mechanisms.</li>
+        <li>Referral pathways for survivors.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 6 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part6">PART 6: SUSTAINABILITY AND EXIT</h1>
+
+    <h2 class="section-title" id="s24">24. Sustainability Strategy</h2>
+    <h3>24.1 Sustainability Pillars</h3>
+    <table>
+        <tr>
+            <th>Pillar</th>
+            <th>Strategy</th>
+        </tr>
+        <tr>
+            <td>Financial</td>
+            <td>Social enterprise revenue; reserves; diversified funding</td>
+        </tr>
+        <tr>
+            <td>Technical</td>
+            <td>Trained community trainers; knowledge transfer; documentation</td>
+        </tr>
+        <tr>
+            <td>Institutional</td>
+            <td>Strong governance; policies; systems; leadership development</td>
+        </tr>
+        <tr>
+            <td>Environmental</td>
+            <td>Circular economy; renewable energy; conservation</td>
+        </tr>
+        <tr>
+            <td>Community</td>
+            <td>Ownership; participation; local leadership</td>
+        </tr>
+        <tr>
+            <td>Partnership</td>
+            <td>Strategic alliances; MoUs; co-funding</td>
+        </tr>
+    </table>
+
+    <h3>24.2 Financial Sustainability</h3>
+    <ul>
+        <li>Social enterprise revenue: Neem paste, BSF larvae, chicken feed, water kiosks.</li>
+        <li>Target: GBP 150,000 over 5 years.</li>
+        <li>Reserves: Build reserve fund equal to 6 months of operating costs.</li>
+        <li>Diversified funding: Grants, donations, government contracts, earned income.</li>
+        <li>Cost recovery: Charge fees for training, consultancy, and services.</li>
+    </ul>
+
+    <h3>24.3 Technical Sustainability</h3>
+    <ul>
+        <li>Train community trainers who can pass on knowledge.</li>
+        <li>Document all processes and SOPs.</li>
+        <li>Establish demonstration sites.</li>
+        <li>Maintain equipment and infrastructure.</li>
+        <li>Foster peer-to-peer learning.</li>
+    </ul>
+
+    <h3>24.4 Institutional Sustainability</h3>
+    <ul>
+        <li>Strong governance structure.</li>
+        <li>Clear policies and procedures.</li>
+        <li>Financial management systems.</li>
+        <li>M&amp;E systems.</li>
+        <li>Leadership development and succession planning.</li>
+        <li>Membership growth and engagement.</li>
+    </ul>
+
+    <h3>24.5 Community Sustainability</h3>
+    <ul>
+        <li>Community ownership and participation.</li>
+        <li>Local leadership in project management.</li>
+        <li>Community contributions (in-kind and financial).</li>
+        <li>Sustainability committees for each project.</li>
+        <li>Integration into local development plans.</li>
+    </ul>
+
+    <h3>24.6 Environmental Sustainability</h3>
+    <ul>
+        <li>Circular economy principles.</li>
+        <li>Renewable energy use.</li>
+        <li>Water conservation.</li>
+        <li>Waste reduction and recycling.</li>
+        <li>Tree planting and conservation.</li>
+    </ul>
+
+    <h3>24.7 Partnership Sustainability</h3>
+    <ul>
+        <li>Formal MoUs with key partners.</li>
+        <li>Joint planning and implementation.</li>
+        <li>Co-funding arrangements.</li>
+        <li>Shared M&amp;E and learning.</li>
+        <li>Regular partner forums.</li>
+    </ul>
+
+    <h3>24.8 Sustainability Milestones</h3>
+    <table>
+        <tr>
+            <th>Year</th>
+            <th>Milestone</th>
+        </tr>
+        <tr>
+            <td>2026–2027</td>
+            <td>Systems and partnerships established; pilot projects operational</td>
+        </tr>
+        <tr>
+            <td>2027–2028</td>
+            <td>Social enterprise revenue generated; reserves building</td>
+        </tr>
+        <tr>
+            <td>2028–2029</td>
+            <td>50% of operating costs covered by earned income</td>
+        </tr>
+        <tr>
+            <td>2029–2030</td>
+            <td>75% of operating costs covered by earned income</td>
+        </tr>
+        <tr>
+            <td>2030–2031</td>
+            <td>Self-sustaining; minimal external support</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s25">25. Exit Strategy</h2>
+    <h3>25.1 Exit Principles</h3>
+    <ul>
+        <li>Sustainability first</li>
+        <li>Community ownership</li>
+        <li>No abrupt withdrawal</li>
+        <li>Gradual transition</li>
+        <li>Documentation and learning</li>
+    </ul>
+
+    <h3>25.2 Exit Phases</h3>
+    <table>
+        <tr>
+            <th>Phase</th>
+            <th>Timing</th>
+            <th>Activities</th>
+        </tr>
+        <tr>
+            <td>Preparation</td>
+            <td>Year 4</td>
+            <td>Assess sustainability; strengthen community capacity</td>
+        </tr>
+        <tr>
+            <td>Transition</td>
+            <td>Year 5</td>
+            <td>Gradually hand over to community structures</td>
+        </tr>
+        <tr>
+            <td>Exit</td>
+            <td>End of Year 5</td>
+            <td>Formal handover; final evaluation; documentation</td>
+        </tr>
+    </table>
+
+    <h3>25.3 Exit Criteria</h3>
+    <ul>
+        <li>Community structures fully operational.</li>
+        <li>Financial sustainability demonstrated.</li>
+        <li>Technical capacity in place.</li>
+        <li>M&amp;E systems functional.</li>
+        <li>Partnerships formalised.</li>
+        <li>No unmet obligations.</li>
+    </ul>
+
+    <h3>25.4 Post-Exit Support</h3>
+    <ul>
+        <li>Light-touch mentoring for 1 year.</li>
+        <li>Occasional technical support as needed.</li>
+        <li>Documentation and learning sharing.</li>
+        <li>Continued partnership on specific initiatives.</li>
+    </ul>
+
+    <h3>25.5 Exit Risks and Mitigation</h3>
+    <table>
+        <tr>
+            <th>Risk</th>
+            <th>Mitigation</th>
+        </tr>
+        <tr>
+            <td>Community unable to sustain</td>
+            <td>Strengthen capacity; gradual transition</td>
+        </tr>
+        <tr>
+            <td>Funding shortfall</td>
+            <td>Build reserves; diversify revenue</td>
+        </tr>
+        <tr>
+            <td>Loss of key staff</td>
+            <td>Succession planning; documentation</td>
+        </tr>
+        <tr>
+            <td>Infrastructure breakdown</td>
+            <td>Maintenance training; spare parts</td>
+        </tr>
+        <tr>
+            <td>Partner withdrawal</td>
+            <td>Formal MoUs; diversified partners</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h2 class="section-title" id="s26">26. Partnerships and Collaboration</h2>
+    <h3>26.1 Key Partners</h3>
+    <table>
+        <tr>
+            <th>Partner</th>
+            <th>Type</th>
+            <th>Area of Collaboration</th>
+        </tr>
+        <tr>
+            <td>ICIPE</td>
+            <td>Research</td>
+            <td>BSF farming, training</td>
+        </tr>
+        <tr>
+            <td>Kilifi County Government</td>
+            <td>Government</td>
+            <td>Licensing, coordination, water</td>
+        </tr>
+        <tr>
+            <td>Pwani University</td>
+            <td>Academic</td>
+            <td>Research, training, volunteers</td>
+        </tr>
+        <tr>
+            <td>Local Women's Groups</td>
+            <td>Community</td>
+            <td>Neem processing, water kiosks</td>
+        </tr>
+        <tr>
+            <td>Youth Groups</td>
+            <td>Community</td>
+            <td>Generator building, BSF farming</td>
+        </tr>
+        <tr>
+            <td>Community Health Volunteers</td>
+            <td>Community</td>
+            <td>Health education, M&amp;E</td>
+        </tr>
+        <tr>
+            <td>Local Businesses</td>
+            <td>Private</td>
+            <td>Supply chain, markets</td>
+        </tr>
+        <tr>
+            <td>Other CBOs</td>
+            <td>Civil Society</td>
+            <td>Advocacy, learning, collaboration</td>
+        </tr>
+        <tr>
+            <td>NEMA</td>
+            <td>Government</td>
+            <td>Environmental compliance</td>
+        </tr>
+        <tr>
+            <td>KRA</td>
+            <td>Government</td>
+            <td>Tax compliance</td>
+        </tr>
+        <tr>
+            <td>ODPC</td>
+            <td>Government</td>
+            <td>Data protection compliance</td>
+        </tr>
+    </table>
+
+    <h3>26.2 Partnership Principles</h3>
+    <ul>
+        <li>Mutual respect</li>
+        <li>Shared vision</li>
+        <li>Clear roles and responsibilities</li>
+        <li>Transparent communication</li>
+        <li>Joint planning and review</li>
+        <li>Mutual accountability</li>
+    </ul>
+
+    <h3>26.3 Partnership Management</h3>
+    <ul>
+        <li>Formal MoUs with key partners.</li>
+        <li>Regular partner meetings.</li>
+        <li>Joint work plans.</li>
+        <li>Shared M&amp;E.</li>
+        <li>Joint reporting.</li>
+        <li>Conflict resolution mechanisms.</li>
+    </ul>
+
+    <h3>26.4 Stakeholder Engagement</h3>
+    <ul>
+        <li>Annual stakeholder forum.</li>
+        <li>Quarterly partner meetings.</li>
+        <li>Community barazas.</li>
+        <li>Feedback mechanisms.</li>
+        <li>Grievance procedures.</li>
+    </ul>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- PART 7 -->
+    <!-- ============================================================ -->
+    <h1 class="part-title" id="part7">PART 7: APPENDICES</h1>
+
+    <h2 class="section-title" id="apA">Appendix A: Results Framework Matrix</h2>
+    <table>
+        <tr>
+            <th>Impact</th>
+            <th>Outcome</th>
+            <th>Output</th>
+            <th>Indicator</th>
+            <th>Baseline</th>
+            <th>Target</th>
+            <th>Data Source</th>
+            <th>Frequency</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>Households with improved livelihoods</td>
+            <td>Income increased</td>
+            <td>Enterprises established</td>
+            <td>% income increase</td>
+            <td>0%</td>
+            <td>40%</td>
+            <td>Survey</td>
+            <td>Annual</td>
+            <td>M&amp;E Officer</td>
+        </tr>
+        <tr>
+            <td>Households with clean water access</td>
+            <td>Waterborne diseases reduced</td>
+            <td>Water kiosks operational</td>
+            <td>% disease reduction</td>
+            <td>0%</td>
+            <td>50%</td>
+            <td>Health records</td>
+            <td>Annual</td>
+            <td>Health Lead</td>
+        </tr>
+        <tr>
+            <td>Trees planted</td>
+            <td>Climate resilience improved</td>
+            <td>Trees planted</td>
+            <td>Number of trees</td>
+            <td>0</td>
+            <td>100,000</td>
+            <td>Tree register</td>
+            <td>Quarterly</td>
+            <td>Environment Lead</td>
+        </tr>
+        <tr>
+            <td>Women in leadership</td>
+            <td>Gender equality improved</td>
+            <td>Women trained</td>
+            <td>% women in leadership</td>
+            <td>0%</td>
+            <td>50%</td>
+            <td>Committee records</td>
+            <td>Quarterly</td>
+            <td>Gender Lead</td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apB">Appendix B: Annual Work Plan Template</h2>
+    <p><em>Year: ______ | Pillar: ______ | Lead: ______</em></p>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Responsible</th>
+            <th>Budget</th>
+            <th>Status</th>
+            <th>Comments</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apC">Appendix C: Quarterly Reporting Template</h2>
+    <ol>
+        <li>Executive Summary</li>
+        <li>Progress Against KPIs</li>
+        <li>Key Achievements</li>
+        <li>Challenges and Mitigation</li>
+        <li>Financial Summary</li>
+        <li>Lessons Learned</li>
+        <li>Next Quarter Plan</li>
+        <li>Attachments</li>
+    </ol>
+
+    <h2 class="section-title" id="apD">Appendix D: KPI Tracking Sheet</h2>
+    <table>
+        <tr>
+            <th>KPI</th>
+            <th>Unit</th>
+            <th>Baseline</th>
+            <th>Target Q1</th>
+            <th>Actual Q1</th>
+            <th>Variance</th>
+            <th>Target Q2</th>
+            <th>Actual Q2</th>
+            <th>Variance</th>
+            <th>Comments</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apE">Appendix E: KRI Tracking Sheet</h2>
+    <table>
+        <tr>
+            <th>KRI</th>
+            <th>Threshold</th>
+            <th>Q1 Status</th>
+            <th>Q2 Status</th>
+            <th>Q3 Status</th>
+            <th>Q4 Status</th>
+            <th>Action Taken</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apF">Appendix F: Risk Register Template</h2>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Risk</th>
+            <th>Category</th>
+            <th>Likelihood (1–5)</th>
+            <th>Impact (1–5)</th>
+            <th>Score</th>
+            <th>Mitigation</th>
+            <th>Owner</th>
+            <th>Status</th>
+            <th>Review Date</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apG">Appendix G: Stakeholder Register</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Organisation</th>
+            <th>Role</th>
+            <th>Contact</th>
+            <th>Engagement Level</th>
+            <th>Frequency</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apH">Appendix H: Asset Register</h2>
+    <table>
+        <tr>
+            <th>Asset ID</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Location</th>
+            <th>Purchase Date</th>
+            <th>Cost</th>
+            <th>Condition</th>
+            <th>Responsible</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apI">Appendix I: Financial Report Template</h2>
+    <p><em>Reporting Period: ______</em></p>
+    <ol>
+        <li>Budget vs Actual</li>
+        <li>Income Summary</li>
+        <li>Expenditure Summary</li>
+        <li>Bank Balances</li>
+        <li>Outstanding Liabilities</li>
+        <li>Notes and Explanations</li>
+        <li>Certification</li>
+    </ol>
+
+    <h2 class="section-title" id="apJ">Appendix J: M&amp;E Data Collection Tools</h2>
+    <ol>
+        <li>Household Survey Questionnaire</li>
+        <li>Focus Group Discussion Guide</li>
+        <li>Key Informant Interview Guide</li>
+        <li>Observation Checklist</li>
+        <li>Training Evaluation Form</li>
+        <li>Beneficiary Feedback Form</li>
+        <li>Water Quality Testing Form</li>
+        <li>Crop Yield Monitoring Form</li>
+    </ol>
+
+    <h2 class="section-title" id="apK">Appendix K: Standard Operating Procedures (SOPs)</h2>
+    <p>Each SOP includes: Purpose, Scope, Definitions, Responsibilities, Procedure, Documentation, Review.</p>
+    <ul>
+        <li>SOP-DL-01 to SOP-DL-04 (Digital Libraries)</li>
+        <li>SOP-SA-01 to SOP-SA-04 (Smart Agriculture)</li>
+        <li>SOP-CR-01 to SOP-CR-04 (Crop Research)</li>
+        <li>SOP-IN-01 to SOP-IN-04 (Innovation)</li>
+        <li>SOP-HW-01 to SOP-HW-04 (Health, Water)</li>
+        <li>SOP-GE-01 to SOP-GE-04 (Gender)</li>
+        <li>SOP-CA-01 to SOP-CA-04 (Care for Ageing)</li>
+        <li>SOP-EN-01 to SOP-EN-04 (Environment)</li>
+        <li>SOP-CC-01 to SOP-CC-10 (Cross-Cutting)</li>
+    </ul>
+
+    <h2 class="section-title" id="apL">Appendix L: Financial Policies (Quick Reference)</h2>
+    <table>
+        <tr>
+            <th>Policy</th>
+            <th>Summary</th>
+            <th>Reference</th>
+        </tr>
+        <tr>
+            <td>Financial Management Policy</td>
+            <td>Governs financial operations</td>
+            <td>KISI-FMP-2026</td>
+        </tr>
+        <tr>
+            <td>Procurement Policy</td>
+            <td>Governs procurement</td>
+            <td>KISI-PP-2026</td>
+        </tr>
+        <tr>
+            <td>Asset Management Policy</td>
+            <td>Governs asset management</td>
+            <td>KISI-AMP-2026</td>
+        </tr>
+        <tr>
+            <td>Anti-Fraud Policy</td>
+            <td>Prevents fraud</td>
+            <td>KISI-AFP-2026</td>
+        </tr>
+        <tr>
+            <td>Whistleblowing Policy</td>
+            <td>Protects reporters</td>
+            <td>KISI-WBP-2026</td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apM">Appendix M: Regulatory Compliance Checklist</h2>
+    <table>
+        <tr>
+            <th>Regulation</th>
+            <th>Requirement</th>
+            <th>Status</th>
+            <th>Responsible</th>
+            <th>Due Date</th>
+            <th>Evidence</th>
+        </tr>
+        <tr>
+            <td>Societies Act</td>
+            <td>Annual returns</td>
+            <td></td>
+            <td>Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>KRA</td>
+            <td>Tax returns</td>
+            <td></td>
+            <td>Treasurer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>NEMA</td>
+            <td>Environmental license</td>
+            <td></td>
+            <td>Environment Lead</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>OSHA</td>
+            <td>Workplace safety</td>
+            <td></td>
+            <td>Health Lead</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>ODPC</td>
+            <td>Data protection</td>
+            <td></td>
+            <td>Data Officer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>County</td>
+            <td>Trade license</td>
+            <td></td>
+            <td>Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apN">Appendix N: Glossary of Terms</h2>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>BETA</td>
+            <td>Bottom-Up Economic Transformation Agenda</td>
+        </tr>
+        <tr>
+            <td>BSF</td>
+            <td>Black Soldier Fly</td>
+        </tr>
+        <tr>
+            <td>CBO</td>
+            <td>Community-Based Organisation</td>
+        </tr>
+        <tr>
+            <td>CIDP</td>
+            <td>County Integrated Development Plan</td>
+        </tr>
+        <tr>
+            <td>CHV</td>
+            <td>Community Health Volunteer</td>
+        </tr>
+        <tr>
+            <td>GBV</td>
+            <td>Gender-Based Violence</td>
+        </tr>
+        <tr>
+            <td>ICIPE</td>
+            <td>International Centre of Insect Physiology and Ecology</td>
+        </tr>
+        <tr>
+            <td>KISS</td>
+            <td>Keep It Sustainable and Sound</td>
+        </tr>
+        <tr>
+            <td>KPI</td>
+            <td>Key Performance Indicator</td>
+        </tr>
+        <tr>
+            <td>KRI</td>
+            <td>Key Risk Indicator</td>
+        </tr>
+        <tr>
+            <td>M&amp;E</td>
+            <td>Monitoring and Evaluation</td>
+        </tr>
+        <tr>
+            <td>MoU</td>
+            <td>Memorandum of Understanding</td>
+        </tr>
+        <tr>
+            <td>NEMA</td>
+            <td>National Environment Management Authority</td>
+        </tr>
+        <tr>
+            <td>ODPC</td>
+            <td>Office of the Data Protection Commissioner</td>
+        </tr>
+        <tr>
+            <td>OSHA</td>
+            <td>Occupational Safety and Health Act</td>
+        </tr>
+        <tr>
+            <td>SOP</td>
+            <td>Standard Operating Procedure</td>
+        </tr>
+        <tr>
+            <td>SWOT</td>
+            <td>Strengths, Weaknesses, Opportunities, Threats</td>
+        </tr>
+        <tr>
+            <td>VAT</td>
+            <td>Value Added Tax</td>
+        </tr>
+        <tr>
+            <td>WIBA</td>
+            <td>Work Injury Benefits Act</td>
+        </tr>
+    </table>
+
+    <h2 class="section-title" id="apO">Appendix O: Approval and Signatures</h2>
+    <p>This Strategic Plan 2026–2031 has been reviewed and approved by the KISI Management Committee.</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Signature</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Mwanaidi Muhavi Ayumba</td>
+            <td>Chairperson</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Moses Isutsa Richard Shileche</td>
+            <td>Treasurer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Silvia Stancy Njoki</td>
+            <td>Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Isaac Masika Wekesa</td>
+            <td>Vice Chair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Mercyline Namaeso Wanyama</td>
+            <td>Vice Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fred Cmatete Wafula</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Samson Baraka Charo</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <p><strong>Document Reference:</strong> KISI-SP-2026-v2.0<br>
+        <strong>Approval Date:</strong> March 2026<br>
+        <strong>Mid-Term Review:</strong> March 2029<br>
+        <strong>End-Term Review:</strong> March 2031<br>
+        <strong>Document Owner:</strong> Chairperson, KISI CBO<br>
+        <strong>Contact:</strong> kilifian4cbo@yahoo.com | 0720468616
+    </p>
+
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ============================================================ -->
+    <!-- FOOTER -->
+    <!-- ============================================================ -->
+    <footer class="manual-footer">
+        <p><strong>END OF KISI STRATEGIC PLAN 2026–2031</strong></p>
+        <p>KISI CBO &copy; 2026 | Document Reference: KISI-SP-2026-v2.0</p>
+        <p><a href="#top" style="color: var(--primary-light); font-weight: bold;">↑ Back to Top</a></p>
+    </footer>
+
+</body>
+
+</html>

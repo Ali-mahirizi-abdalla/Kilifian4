@@ -1,0 +1,2804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KISI Complete Safeguarding Manual</title>
+    <style>
+        :root {
+            --primary: #1a4d2e;
+            --primary-light: #2c6e49;
+            --accent: #eaf4ea;
+            --border: #c8d6c8;
+            --text: #222;
+            --muted: #555;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', serif;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 30px 20px 80px;
+            line-height: 1.65;
+            color: var(--text);
+            background: #fdfdfd;
+        }
+
+        header.manual-header {
+            text-align: center;
+            padding: 30px 20px;
+            background: var(--accent);
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-bottom: 4px solid var(--primary);
+        }
+
+        header.manual-header h1 {
+            color: var(--primary);
+            margin: 0 0 10px;
+            border: none;
+            font-size: 1.9em;
+        }
+
+        header.manual-header h2 {
+            color: var(--primary-light);
+            border: none;
+            font-size: 1.2em;
+            margin: 5px 0;
+        }
+
+        header.manual-header .meta {
+            font-style: italic;
+            color: var(--muted);
+            font-size: 0.95em;
+            margin-top: 15px;
+        }
+
+        nav.toc {
+            background: #fff;
+            border: 2px solid var(--primary);
+            border-radius: 8px;
+            padding: 20px 25px;
+            margin-bottom: 40px;
+        }
+
+        nav.toc h2 {
+            margin-top: 0;
+            color: var(--primary);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 8px;
+        }
+
+        nav.toc ol {
+            margin-left: 20px;
+        }
+
+        nav.toc ol li {
+            margin-bottom: 5px;
+        }
+
+        nav.toc a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        nav.toc a:hover {
+            text-decoration: underline;
+        }
+
+        h1.part-title {
+            color: #fff;
+            background: var(--primary);
+            padding: 15px 20px;
+            border-radius: 6px;
+            margin-top: 60px;
+            font-size: 1.5em;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        h2.policy-title {
+            color: var(--primary);
+            border-bottom: 3px solid var(--primary);
+            padding-bottom: 8px;
+            margin-top: 50px;
+            font-size: 1.4em;
+        }
+
+        h3 {
+            color: var(--primary-light);
+            margin-top: 25px;
+            font-size: 1.15em;
+        }
+
+        h4 {
+            color: var(--primary-light);
+            margin-top: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 15px 0;
+            font-size: 0.95em;
+        }
+
+        th,
+        td {
+            border: 1px solid #bbb;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: var(--accent);
+        }
+
+        ul,
+        ol {
+            margin-left: 22px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .callout {
+            background: var(--accent);
+            border-left: 4px solid var(--primary);
+            padding: 12px 18px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .confidential {
+            background: #fff3f3;
+            border-left: 4px solid #b30000;
+            color: #b30000;
+            font-weight: bold;
+            padding: 10px 15px;
+            margin: 15px 0;
+            text-align: center;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .form-field {
+            display: inline-block;
+            border-bottom: 1px solid #999;
+            min-width: 250px;
+            height: 20px;
+            vertical-align: bottom;
+        }
+
+        .form-line {
+            border-bottom: 1px solid #999;
+            height: 26px;
+            margin: 8px 0;
+        }
+
+        .signature-table td {
+            height: 35px;
+        }
+
+        .back-to-top {
+            display: block;
+            text-align: right;
+            font-size: 0.85em;
+            color: var(--muted);
+            margin-top: 30px;
+        }
+
+        .back-to-top a {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .back-to-top a:hover {
+            text-decoration: underline;
+        }
+
+        footer.manual-footer {
+            margin-top: 60px;
+            border-top: 3px solid var(--primary);
+            padding-top: 20px;
+            text-align: center;
+            color: var(--muted);
+            font-size: 0.9em;
+        }
+
+        @media print {
+            body {
+                max-width: none;
+                padding: 10mm;
+                font-size: 11pt;
+            }
+
+            nav.toc {
+                page-break-after: always;
+            }
+
+            h1.part-title {
+                page-break-before: always;
+            }
+
+            h2.policy-title {
+                page-break-before: always;
+            }
+
+            .back-to-top {
+                display: none;
+            }
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px 10px 60px;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            header.manual-header h1 {
+                font-size: 1.4em;
+            }
+        }
+
+        /* TOP NAVIGATION BAR */
+        .doc-top-bar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            background: #ffffff;
+            border: 1px solid var(--border);
+            border-left: 5px solid var(--primary);
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 10px rgba(26, 77, 46, 0.08);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-size: 0.95rem;
+        }
+
+        .doc-top-bar a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s, transform 0.2s;
+        }
+
+        .doc-top-bar a:hover {
+            color: var(--primary-light);
+            text-decoration: underline;
+        }
+
+        .doc-top-bar .doc-links {
+            display: flex;
+            gap: 18px;
+            align-items: center;
+        }
+
+        @media print {
+            .doc-top-bar {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+<body id="top">
+
+    <!-- Quick Navigation Bar -->
+    <div class="doc-top-bar">
+        <a href="index.html">← Back to KISI Portal</a>
+        <div class="doc-links">
+            <a href="strategicplan.html">Strategic Plan 2026–2031 →</a>
+        </div>
+    </div>
+
+    <header class="manual-header">
+        <h1>KILIFIAN4 INTEGRITY AND SUSTAINABILITY INITIATIVE (KISI)</h1>
+        <h2>COMPLETE SAFEGUARDING MANUAL</h2>
+        <p><em>Policies, Procedures, and Templates</em></p>
+        <p class="meta">
+            <strong>Version:</strong> 1.0 &nbsp;|&nbsp;
+            <strong>Approved:</strong> March 2026 &nbsp;|&nbsp;
+            <strong>Review:</strong> March 2028<br>
+            <strong>Document Reference:</strong> KISI-SGM-2026-v1.0<br>
+            <strong>Contact:</strong> kilifian4cbo@yahoo.com | 0720468616<br>
+            <strong>Address:</strong> 195 80108, Kilifi Kenya, Kibano, Mombasa–Malindi Road
+        </p>
+    </header>
+
+    <nav class="toc" id="toc">
+        <h2>Table of Contents</h2>
+        <p><strong>Part A — Policies</strong></p>
+        <ol>
+            <li><a href="#policy-1">Code of Conduct</a></li>
+            <li><a href="#policy-2">Child Protection Policy</a></li>
+            <li><a href="#policy-3">Anti-Fraud and Anti-Corruption Policy</a></li>
+            <li><a href="#policy-4">Whistleblowing Policy</a></li>
+            <li><a href="#policy-5">Data Protection Policy</a></li>
+            <li><a href="#policy-6">Gender Equality Policy</a></li>
+            <li><a href="#policy-7">Health and Safety Policy</a></li>
+            <li><a href="#policy-8">Financial Management Policy</a></li>
+            <li><a href="#policy-9">Safeguarding Policy</a></li>
+        </ol>
+        <p><strong>Part B — Annexes</strong></p>
+        <ol start="10">
+            <li><a href="#annex-a">Annex A: Safeguarding Incident Report Form</a></li>
+            <li><a href="#annex-b">Annex B: Safeguarding Code of Conduct</a></li>
+            <li><a href="#annex-c">Annex C: Safeguarding Training Register</a></li>
+            <li><a href="#annex-d">Annex D: Safeguarding Referral Pathways</a></li>
+            <li><a href="#annex-e">Annex E: Safeguarding Risk Assessment Template</a></li>
+        </ol>
+        <p><strong>Part C — Approval and Signatures</strong></p>
+    </nav>
+
+    <h1 class="part-title" id="part-a">PART A: POLICIES</h1>
+
+    <!-- POLICY 1 -->
+    <h2 class="policy-title" id="policy-1">POLICY 1: CODE OF CONDUCT</h2>
+    <h3>1. Purpose</h3>
+    <p>This Code of Conduct establishes the ethical and professional standards expected of all KISI office bearers,
+        members, staff, volunteers, and partners. It promotes integrity, accountability, and respect in all KISI
+        activities.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, consultants, contractors, and partner
+        organisations.</p>
+    <h3>3. Core Principles</h3>
+    <ul>
+        <li><strong>Integrity:</strong> Act honestly, transparently, and ethically at all times.</li>
+        <li><strong>Accountability:</strong> Take responsibility for actions and decisions.</li>
+        <li><strong>Respect:</strong> Treat all persons with dignity regardless of gender, age, disability, ethnicity,
+            or religion.</li>
+        <li><strong>Confidentiality:</strong> Protect sensitive information entrusted to KISI.</li>
+        <li><strong>Non-Discrimination:</strong> Reject all forms of discrimination, harassment, and exploitation.</li>
+        <li><strong>Compliance:</strong> Follow all applicable laws, regulations, and KISI policies.</li>
+        <li><strong>Conflict of Interest:</strong> Declare and avoid personal interests that conflict with KISI's
+            mission.</li>
+    </ul>
+    <h3>4. Expected Behaviour</h3>
+    <table>
+        <tr>
+            <th>DO</th>
+            <th>DO NOT</th>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>Act with honesty and fairness.</li>
+                    <li>Use KISI resources responsibly.</li>
+                    <li>Report misconduct promptly.</li>
+                    <li>Maintain professional boundaries.</li>
+                    <li>Respect cultural diversity.</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Accept bribes, kickbacks, or gifts.</li>
+                    <li>Misuse KISI funds, assets, or information.</li>
+                    <li>Engage in harassment or discrimination.</li>
+                    <li>Retaliate against whistleblowers.</li>
+                    <li>Represent KISI without authorisation.</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <h3>5. Conflicts of Interest</h3>
+    <p>All persons must declare any actual or potential conflict of interest to the Management Committee and recuse
+        themselves from related decisions.</p>
+    <h3>6. Use of Resources</h3>
+    <p>KISI resources (funds, equipment, vehicles, information) must be used solely for KISI's objectives and in
+        accordance with KISI's Financial Management Policy.</p>
+    <h3>7. Breach and Sanctions</h3>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Example</th>
+            <th>Sanction</th>
+        </tr>
+        <tr>
+            <td>Minor</td>
+            <td>Lateness, rudeness</td>
+            <td>Verbal warning; KES 100 fine</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>Repeated absence, misuse of petty funds</td>
+            <td>Written warning; suspension</td>
+        </tr>
+        <tr>
+            <td>Serious</td>
+            <td>Fraud, harassment, abuse</td>
+            <td>Expulsion; referral to authorities</td>
+        </tr>
+    </table>
+    <h3>8. Reporting</h3>
+    <p>Report breaches to the Secretary or Chairperson. Anonymous reports may be submitted via the KISI Whistleblowing
+        Policy.</p>
+    <h3>9. Review</h3>
+    <p>This Code shall be reviewed every two years or as needed.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 2 -->
+    <h2 class="policy-title" id="policy-2">POLICY 2: CHILD PROTECTION POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to protecting all children (under 18 years) involved in its activities from harm, abuse,
+        exploitation, and neglect. This policy ensures a safe environment for children in all KISI programmes.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, partners, contractors, and visitors who come into
+        contact with children through KISI activities.</p>
+    <h3>3. Guiding Principles</h3>
+    <ul>
+        <li><strong>Best Interests of the Child:</strong> The child's safety and well-being come first.</li>
+        <li><strong>Zero Tolerance:</strong> No form of child abuse is acceptable.</li>
+        <li><strong>Participation:</strong> Children have a right to be heard on matters affecting them.</li>
+        <li><strong>Non-Discrimination:</strong> All children are protected equally.</li>
+        <li><strong>Confidentiality:</strong> Child protection information is handled sensitively.</li>
+    </ul>
+    <h3>4. Forms of Child Abuse</h3>
+    <table>
+        <tr>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Physical</td>
+            <td>Non-accidental injury to a child</td>
+        </tr>
+        <tr>
+            <td>Emotional</td>
+            <td>Persistent ill-treatment affecting emotional development</td>
+        </tr>
+        <tr>
+            <td>Sexual</td>
+            <td>Any sexual act or exploitation involving a child</td>
+        </tr>
+        <tr>
+            <td>Neglect</td>
+            <td>Failure to meet basic needs (food, shelter, health, education)</td>
+        </tr>
+        <tr>
+            <td>Exploitation</td>
+            <td>Child labour, trafficking, or any form of economic exploitation</td>
+        </tr>
+    </table>
+    <h3>5. Code of Conduct for Working with Children</h3>
+    <ul>
+        <li>Always work in pairs or visible areas with children.</li>
+        <li>Never spend time alone with a child in a secluded place.</li>
+        <li>Never use physical punishment or threatening language.</li>
+        <li>Never develop inappropriate relationships with children.</li>
+        <li>Never take photographs or videos without parental/guardian consent.</li>
+        <li>Never give gifts or money without prior approval.</li>
+        <li>Report any concern immediately.</li>
+    </ul>
+    <h3>6. Safe Recruitment</h3>
+    <p>All persons working with children must provide: National ID or passport, Police clearance certificate, two
+        references, signed safeguarding declaration, completion of child protection training.</p>
+    <h3>7. Reporting and Response</h3>
+    <table>
+        <tr>
+            <th>Step</th>
+            <th>Action</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ensure immediate safety of the child</td>
+            <td>Any person</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Report to Safeguarding Focal Point within 24 hours</td>
+            <td>Any person</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Document the concern</td>
+            <td>Safeguarding Focal Point</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Report to authorities (Children's Services, Police)</td>
+            <td>Safeguarding Focal Point</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Support the child (counselling, referral)</td>
+            <td>Safeguarding Focal Point</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Investigate and take disciplinary action</td>
+            <td>Management Committee</td>
+        </tr>
+    </table>
+    <h3>8. Reporting Channels</h3>
+    <table>
+        <tr>
+            <th>Channel</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Safeguarding Focal Point</td>
+            <td>[Name], [Phone], [Email]</td>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Mwanaidi Muhavi Ayumba, 0734440543</td>
+        </tr>
+        <tr>
+            <td>Childline Kenya</td>
+            <td>116 (toll-free)</td>
+        </tr>
+        <tr>
+            <td>Kenya Police</td>
+            <td>999 / 112</td>
+        </tr>
+    </table>
+    <h3>9. Legal Framework</h3>
+    <ul>
+        <li>Constitution of Kenya 2010</li>
+        <li>Children Act 2022</li>
+        <li>Sexual Offences Act 2006</li>
+        <li>UN Convention on the Rights of the Child (CRC)</li>
+    </ul>
+    <h3>10. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 3 -->
+    <h2 class="policy-title" id="policy-3">POLICY 3: ANTI-FRAUD AND ANTI-CORRUPTION POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to the highest standards of integrity, transparency, and accountability. This policy
+        establishes KISI's zero-tolerance stance against fraud, corruption, bribery, and financial malpractice.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, consultants, contractors, partners, suppliers,
+        and beneficiaries.</p>
+    <h3>3. Definitions</h3>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>Fraud</td>
+            <td>Intentional deception for personal or organisational gain</td>
+        </tr>
+        <tr>
+            <td>Corruption</td>
+            <td>Abuse of entrusted power for private gain</td>
+        </tr>
+        <tr>
+            <td>Bribery</td>
+            <td>Offering, giving, receiving, or soliciting something of value to influence action</td>
+        </tr>
+        <tr>
+            <td>Embezzlement</td>
+            <td>Misappropriation of funds or assets entrusted to one's care</td>
+        </tr>
+        <tr>
+            <td>Conflict of Interest</td>
+            <td>Personal interest that conflicts with KISI's interest</td>
+        </tr>
+        <tr>
+            <td>Kickback</td>
+            <td>Illegal payment for favourable treatment</td>
+        </tr>
+    </table>
+    <h3>4. Prohibited Acts</h3>
+    <ul>
+        <li>Soliciting, accepting, or offering bribes or kickbacks.</li>
+        <li>Falsifying financial records, receipts, or reports.</li>
+        <li>Misappropriating KISI funds, assets, or property.</li>
+        <li>Processing fraudulent payments or invoices.</li>
+        <li>Using KISI resources for personal benefit.</li>
+        <li>Concealing or failing to declare conflicts of interest.</li>
+        <li>Colluding with suppliers or partners to defraud KISI.</li>
+        <li>Nepotism or favouritism in recruitment or procurement.</li>
+    </ul>
+    <h3>5. Preventive Measures</h3>
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Control</th>
+        </tr>
+        <tr>
+            <td>Financial Management</td>
+            <td>Dual signatories; monthly reconciliations; annual audits</td>
+        </tr>
+        <tr>
+            <td>Procurement</td>
+            <td>Competitive bidding; three quotations; procurement committee</td>
+        </tr>
+        <tr>
+            <td>Cash Handling</td>
+            <td>Receipts for all payments; cash book; surprise cash counts</td>
+        </tr>
+        <tr>
+            <td>Banking</td>
+            <td>Two signatories (Treasurer mandatory); no blank cheques</td>
+        </tr>
+        <tr>
+            <td>Asset Management</td>
+            <td>Asset register; regular physical verification</td>
+        </tr>
+        <tr>
+            <td>Human Resources</td>
+            <td>Reference checks; conflict-of-interest declarations</td>
+        </tr>
+        <tr>
+            <td>Reporting</td>
+            <td>Whistleblowing channels; quarterly financial reports</td>
+        </tr>
+    </table>
+    <h3>6. Reporting Suspected Fraud or Corruption</h3>
+    <ol>
+        <li>Report immediately to the Treasurer, Chairperson, or via the Whistleblowing Policy.</li>
+        <li>Provide a written statement with details (date, persons, amounts, evidence).</li>
+        <li>Preserve all relevant documents and evidence.</li>
+        <li>Cooperate fully with investigations.</li>
+    </ol>
+    <h3>7. Investigation Procedure</h3>
+    <table>
+        <tr>
+            <th>Step</th>
+            <th>Action</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Receive and document report</td>
+            <td>Treasurer / Chairperson</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Constitute investigation committee (3 members)</td>
+            <td>Management Committee</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Conduct investigation (max 30 days)</td>
+            <td>Investigation Committee</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Submit findings and recommendations</td>
+            <td>Investigation Committee</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Take disciplinary or legal action</td>
+            <td>Management Committee</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Report to authorities where criminal</td>
+            <td>Chairperson</td>
+        </tr>
+    </table>
+    <h3>8. Sanctions</h3>
+    <ul>
+        <li>Recovery of misappropriated funds or assets.</li>
+        <li>Written warning, suspension, or expulsion.</li>
+        <li>Termination of contracts with partners or suppliers.</li>
+        <li>Referral to Kenya Police and/or Ethics and Anti-Corruption Commission (EACC).</li>
+        <li>Legal action for criminal or civil recovery.</li>
+    </ul>
+    <h3>9. Protection of Reporters</h3>
+    <p>KISI will protect persons who report suspected fraud or corruption in good faith from retaliation, victimisation,
+        or discrimination.</p>
+    <h3>10. Legal Framework</h3>
+    <ul>
+        <li>Anti-Corruption and Economic Crimes Act 2003</li>
+        <li>Bribery Act 2016</li>
+        <li>Public Officer Ethics Act 2003</li>
+        <li>Penal Code (Cap 63)</li>
+        <li>Public Procurement and Asset Disposal Act 2015</li>
+    </ul>
+    <h3>11. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 4 -->
+    <h2 class="policy-title" id="policy-4">POLICY 4: WHISTLEBLOWING POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to transparency and accountability. This policy encourages and protects individuals who report
+        suspected wrongdoing, malpractice, or unethical conduct within KISI or its partners.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, consultants, contractors, partners, and
+        beneficiaries who wish to report wrongdoing.</p>
+    <h3>3. What Can Be Reported</h3>
+    <ul>
+        <li>Fraud, corruption, or bribery</li>
+        <li>Financial mismanagement or embezzlement</li>
+        <li>Child abuse or safeguarding violations</li>
+        <li>Sexual harassment or discrimination</li>
+        <li>Abuse of power or authority</li>
+        <li>Breach of KISI policies or laws</li>
+        <li>Environmental harm or violations</li>
+        <li>Health and safety violations</li>
+        <li>Other serious misconduct</li>
+    </ul>
+    <h3>4. Reporting Channels</h3>
+    <table>
+        <tr>
+            <th>Channel</th>
+            <th>Contact</th>
+            <th>Suitable For</th>
+        </tr>
+        <tr>
+            <td>Direct Report</td>
+            <td>Chairperson: 0734440543</td>
+            <td>General concerns</td>
+        </tr>
+        <tr>
+            <td>Treasurer</td>
+            <td>0720468616</td>
+            <td>Financial concerns</td>
+        </tr>
+        <tr>
+            <td>Secretary</td>
+            <td>0790592884</td>
+            <td>Governance concerns</td>
+        </tr>
+        <tr>
+            <td>Anonymous Email</td>
+            <td>[To be established]</td>
+            <td>Sensitive concerns</td>
+        </tr>
+        <tr>
+            <td>External — EACC</td>
+            <td>1517 (toll-free)</td>
+            <td>Criminal matters</td>
+        </tr>
+        <tr>
+            <td>External — Childline Kenya</td>
+            <td>116</td>
+            <td>Child protection</td>
+        </tr>
+    </table>
+    <h3>5. How to Report</h3>
+    <ol>
+        <li>Provide your name (unless anonymous).</li>
+        <li>Describe the wrongdoing clearly (who, what, when, where, how).</li>
+        <li>Provide evidence if available.</li>
+        <li>State if you have reported elsewhere.</li>
+        <li>Submit via any channel above.</li>
+    </ol>
+    <h3>6. Anonymous Reporting</h3>
+    <p>KISI accepts anonymous reports. However, anonymous reports may be harder to investigate. KISI will investigate
+        all reports to the extent possible.</p>
+    <h3>7. Protection of Whistleblowers</h3>
+    <ul>
+        <li><strong>Confidentiality:</strong> Identity kept confidential to the extent possible.</li>
+        <li><strong>Non-Retaliation:</strong> No retaliation, victimisation, or discrimination.</li>
+        <li><strong>Support:</strong> Counselling and support available if needed.</li>
+        <li><strong>Legal Protection:</strong> Protected under the Kenya Whistleblower Protection framework.</li>
+    </ul>
+    <h3>8. Investigation Procedure</h3>
+    <table>
+        <tr>
+            <th>Step</th>
+            <th>Action</th>
+            <th>Timeline</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Acknowledge receipt</td>
+            <td>7 days</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Preliminary assessment</td>
+            <td>14 days</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Full investigation</td>
+            <td>30–90 days</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Report findings</td>
+            <td>Within 7 days of completion</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Action and feedback</td>
+            <td>Within 30 days of findings</td>
+        </tr>
+    </table>
+    <h3>9. False Reports</h3>
+    <p>Knowingly making false or malicious reports is a breach of this policy and may lead to disciplinary action.</p>
+    <h3>10. Record Keeping</h3>
+    <p>All reports and investigations will be documented and stored securely for a minimum of seven years.</p>
+    <h3>11. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 5 -->
+    <h2 class="policy-title" id="policy-5">POLICY 5: DATA PROTECTION POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI collects, processes, and stores personal data of members, beneficiaries, staff, volunteers, and partners.
+        This policy ensures compliance with the Kenya Data Protection Act 2019 and protects the privacy of data
+        subjects.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all personal data collected, stored, or processed by KISI in any format (paper, electronic, or
+        verbal).</p>
+    <h3>3. Definitions</h3>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>Personal Data</td>
+            <td>Any information relating to an identified or identifiable person</td>
+        </tr>
+        <tr>
+            <td>Data Subject</td>
+            <td>The individual to whom personal data relates</td>
+        </tr>
+        <tr>
+            <td>Data Controller</td>
+            <td>KISI (determines purpose and means of processing)</td>
+        </tr>
+        <tr>
+            <td>Data Processor</td>
+            <td>Any party processing data on behalf of KISI</td>
+        </tr>
+        <tr>
+            <td>Sensitive Data</td>
+            <td>Health, biometric, religious, political, or sexual orientation data</td>
+        </tr>
+    </table>
+    <h3>4. Data Protection Principles</h3>
+    <ol>
+        <li><strong>Lawfulness:</strong> Process data lawfully and fairly.</li>
+        <li><strong>Purpose Limitation:</strong> Collect data for specific, legitimate purposes.</li>
+        <li><strong>Data Minimisation:</strong> Collect only what is necessary.</li>
+        <li><strong>Accuracy:</strong> Keep data accurate and up to date.</li>
+        <li><strong>Storage Limitation:</strong> Retain only as long as necessary.</li>
+        <li><strong>Integrity and Confidentiality:</strong> Protect data with appropriate security.</li>
+        <li><strong>Accountability:</strong> Be able to demonstrate compliance.</li>
+    </ol>
+    <h3>5. Rights of Data Subjects</h3>
+    <ul>
+        <li>Right to be informed</li>
+        <li>Right of access</li>
+        <li>Right to rectification</li>
+        <li>Right to erasure (right to be forgotten)</li>
+        <li>Right to restrict processing</li>
+        <li>Right to data portability</li>
+        <li>Right to object</li>
+        <li>Right not to be subject to automated decision-making</li>
+    </ul>
+    <h3>6. Data Collection and Consent</h3>
+    <ul>
+        <li>KISI will obtain explicit consent before collecting personal data.</li>
+        <li>Consent will be in writing or recorded verbally with a witness.</li>
+        <li>Data subjects may withdraw consent at any time.</li>
+        <li>Children's data requires parental/guardian consent.</li>
+        <li>Data will be collected for specified, explicit, and legitimate purposes only.</li>
+    </ul>
+    <h3>7. Data Security</h3>
+    <table>
+        <tr>
+            <th>Measure</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>Physical</td>
+            <td>Locked cabinets; restricted access to offices</td>
+        </tr>
+        <tr>
+            <td>Electronic</td>
+            <td>Password-protected devices; encryption; firewalls</td>
+        </tr>
+        <tr>
+            <td>Access Control</td>
+            <td>Role-based access; authorisation required</td>
+        </tr>
+        <tr>
+            <td>Backup</td>
+            <td>Regular backups; secure off-site storage</td>
+        </tr>
+        <tr>
+            <td>Training</td>
+            <td>Staff and volunteers trained on data protection</td>
+        </tr>
+        <tr>
+            <td>Incident Response</td>
+            <td>Procedure for reporting and managing data breaches</td>
+        </tr>
+    </table>
+    <h3>8. Data Sharing</h3>
+    <ul>
+        <li>Data will only be shared with consent or legal obligation.</li>
+        <li>Data processors must sign a data processing agreement.</li>
+        <li>Cross-border transfers will comply with the Data Protection Act.</li>
+        <li>KISI will not sell personal data.</li>
+    </ul>
+    <h3>9. Data Retention</h3>
+    <table>
+        <tr>
+            <th>Type of Data</th>
+            <th>Retention Period</th>
+        </tr>
+        <tr>
+            <td>Membership records</td>
+            <td>7 years after membership ends</td>
+        </tr>
+        <tr>
+            <td>Financial records</td>
+            <td>7 years</td>
+        </tr>
+        <tr>
+            <td>Beneficiary data</td>
+            <td>5 years after project ends</td>
+        </tr>
+        <tr>
+            <td>Safeguarding records</td>
+            <td>Permanent or as required by law</td>
+        </tr>
+        <tr>
+            <td>Project M&amp;E data</td>
+            <td>5 years</td>
+        </tr>
+    </table>
+    <h3>10. Data Breach Response</h3>
+    <ol>
+        <li>Contain the breach immediately.</li>
+        <li>Assess the risk to data subjects.</li>
+        <li>Notify the Office of the Data Protection Commissioner (ODPC) within 72 hours if required.</li>
+        <li>Notify affected data subjects if high risk.</li>
+        <li>Document the breach and lessons learned.</li>
+    </ol>
+    <h3>11. Data Protection Officer</h3>
+    <p>KISI shall designate a Data Protection Focal Point responsible for compliance with this policy. Contact: [Name],
+        [Phone], [Email].</p>
+    <h3>12. Legal Framework</h3>
+    <ul>
+        <li>Kenya Data Protection Act 2019</li>
+        <li>Constitution of Kenya 2010 (Article 31 — Right to Privacy)</li>
+        <li>Computer Misuse and Cybercrimes Act 2018</li>
+        <li>General Data Protection Regulation (GDPR) where applicable</li>
+    </ul>
+    <h3>13. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 6 -->
+    <h2 class="policy-title" id="policy-6">POLICY 6: GENDER EQUALITY POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to promoting gender equality, women's empowerment, and the inclusion of all genders in its
+        governance, programmes, and operations. This policy ensures that KISI's work advances gender equity and
+        challenges harmful social norms.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, partners, contractors, and beneficiaries.</p>
+    <h3>3. Guiding Principles</h3>
+    <ul>
+        <li><strong>Equality:</strong> Equal rights, responsibilities, and opportunities for all genders.</li>
+        <li><strong>Non-Discrimination:</strong> Zero tolerance for gender-based discrimination.</li>
+        <li><strong>Empowerment:</strong> Actively promote women's leadership and economic empowerment.</li>
+        <li><strong>Inclusion:</strong> Recognise and include women, men, girls, boys, and gender minorities.</li>
+        <li><strong>Intersectionality:</strong> Recognise how gender intersects with age, disability, ethnicity, and
+            class.</li>
+        <li><strong>Do No Harm:</strong> Ensure interventions do not reinforce gender inequalities.</li>
+    </ul>
+    <h3>4. Key Commitments</h3>
+    <table>
+        <tr>
+            <th>Area</th>
+            <th>Commitment</th>
+        </tr>
+        <tr>
+            <td>Governance</td>
+            <td>At least 50% women in management committee and leadership roles</td>
+        </tr>
+        <tr>
+            <td>Employment</td>
+            <td>Equal pay for equal work; family-friendly policies; maternity and paternity leave</td>
+        </tr>
+        <tr>
+            <td>Programmes</td>
+            <td>Gender analysis in project design; sex-disaggregated data; gender-sensitive indicators</td>
+        </tr>
+        <tr>
+            <td>Decision-Making</td>
+            <td>Women's participation in community decision-making structures</td>
+        </tr>
+        <tr>
+            <td>Economic Empowerment</td>
+            <td>Vocational training, financial literacy, and access to credit for women</td>
+        </tr>
+        <tr>
+            <td>Health</td>
+            <td>Reproductive health education; menstrual hygiene management; maternal health</td>
+        </tr>
+        <tr>
+            <td>GBV Prevention</td>
+            <td>Prevention, referral pathways, and support for survivors</td>
+        </tr>
+        <tr>
+            <td>Partnerships</td>
+            <td>Partners must comply with this policy</td>
+        </tr>
+    </table>
+    <h3>5. Specific Commitments for Women and Girls</h3>
+    <ul>
+        <li>Promote girls' education and retention in schools.</li>
+        <li>Provide safe spaces for women and girls.</li>
+        <li>Support women's economic empowerment through entrepreneurship.</li>
+        <li>Ensure women's participation in water committees and leadership.</li>
+        <li>Address menstrual hygiene management in all water and health projects.</li>
+        <li>Prevent and respond to gender-based violence.</li>
+        <li>Challenge harmful cultural practices (e.g., early marriage, FGM).</li>
+    </ul>
+    <h3>6. Male Engagement</h3>
+    <p>KISI recognises that gender equality requires the engagement of men and boys as allies. KISI will:</p>
+    <ul>
+        <li>Provide gender sensitisation training for men.</li>
+        <li>Promote positive masculinity.</li>
+        <li>Encourage men's participation in caregiving and household work.</li>
+        <li>Engage men in GBV prevention.</li>
+    </ul>
+    <h3>7. Gender Mainstreaming in Programmes</h3>
+    <table>
+        <tr>
+            <th>Stage</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Design</td>
+            <td>Conduct gender analysis; set gender-sensitive objectives</td>
+        </tr>
+        <tr>
+            <td>Implementation</td>
+            <td>Ensure equal participation; use gender-sensitive approaches</td>
+        </tr>
+        <tr>
+            <td>Monitoring</td>
+            <td>Collect sex-disaggregated data; track gender indicators</td>
+        </tr>
+        <tr>
+            <td>Evaluation</td>
+            <td>Assess gender outcomes; document lessons learned</td>
+        </tr>
+        <tr>
+            <td>Reporting</td>
+            <td>Include gender analysis in reports</td>
+        </tr>
+    </table>
+    <h3>8. Preventing and Responding to GBV</h3>
+    <ul>
+        <li>Zero tolerance for gender-based violence.</li>
+        <li>Establish referral pathways for survivors.</li>
+        <li>Train staff and volunteers on GBV response.</li>
+        <li>Provide psychosocial support and safe spaces.</li>
+        <li>Report incidents to authorities as required.</li>
+    </ul>
+    <h3>9. Legal Framework</h3>
+    <ul>
+        <li>Constitution of Kenya 2010 (Article 27 — Equality and Freedom from Discrimination)</li>
+        <li>Gender Equality and Development Act</li>
+        <li>Sexual Offences Act 2006</li>
+        <li>Protection Against Domestic Violence Act 2015</li>
+        <li>CEDAW</li>
+        <li>Beijing Declaration and Platform for Action</li>
+        <li>Sustainable Development Goal 5 (Gender Equality)</li>
+    </ul>
+    <h3>10. Monitoring and Reporting</h3>
+    <ul>
+        <li>Conduct annual gender audits.</li>
+        <li>Report gender progress to the Management Committee quarterly.</li>
+        <li>Include gender indicators in M&amp;E framework.</li>
+    </ul>
+    <h3>11. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 7 -->
+    <h2 class="policy-title" id="policy-7">POLICY 7: HEALTH AND SAFETY POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to providing a safe and healthy environment for all staff, volunteers, members, beneficiaries,
+        and visitors. This policy outlines KISI's commitment to preventing accidents, injuries, and occupational
+        illnesses.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI office bearers, members, staff, volunteers, consultants, contractors, partners, and
+        beneficiaries at KISI premises, project sites, and activities.</p>
+    <h3>3. Guiding Principles</h3>
+    <ul>
+        <li><strong>Duty of Care:</strong> KISI has a duty to protect the health and safety of all persons involved in
+            its activities.</li>
+        <li><strong>Prevention:</strong> Proactive measures to prevent accidents and illnesses.</li>
+        <li><strong>Participation:</strong> All persons have a role in maintaining safety.</li>
+        <li><strong>Compliance:</strong> Comply with the Occupational Safety and Health Act (OSHA) 2007.</li>
+        <li><strong>Continuous Improvement:</strong> Regularly review and improve safety practices.</li>
+    </ul>
+    <h3>4. Responsibilities</h3>
+    <table>
+        <tr>
+            <th>Role</th>
+            <th>Responsibilities</th>
+        </tr>
+        <tr>
+            <td>Management Committee</td>
+            <td>Approve policy; allocate resources; review incidents</td>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Overall accountability for health and safety</td>
+        </tr>
+        <tr>
+            <td>Health and Safety Officer</td>
+            <td>Coordinate safety programmes; conduct inspections; report incidents</td>
+        </tr>
+        <tr>
+            <td>Supervisors</td>
+            <td>Enforce safety rules; train workers; respond to incidents</td>
+        </tr>
+        <tr>
+            <td>All Staff and Volunteers</td>
+            <td>Follow safety rules; report hazards; use protective equipment</td>
+        </tr>
+    </table>
+    <h3>5. General Safety Rules</h3>
+    <ul>
+        <li>Follow all safety instructions and signage.</li>
+        <li>Use personal protective equipment (PPE) where provided.</li>
+        <li>Report hazards, accidents, and near-misses immediately.</li>
+        <li>Keep work areas clean and tidy.</li>
+        <li>Do not operate equipment without training.</li>
+        <li>Do not work under the influence of alcohol or drugs.</li>
+        <li>Know emergency procedures (fire, first aid, evacuation).</li>
+    </ul>
+    <h3>6. Specific Hazards and Controls</h3>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Hazard</th>
+            <th>Control</th>
+        </tr>
+        <tr>
+            <td>Generator Construction</td>
+            <td>Cuts, electric shock</td>
+            <td>Gloves, eye protection, trained supervision</td>
+        </tr>
+        <tr>
+            <td>Neem Processing</td>
+            <td>Dust, allergic reactions</td>
+            <td>Masks, ventilation, gloves</td>
+        </tr>
+        <tr>
+            <td>BSF Farming</td>
+            <td>Biological hazards, odours</td>
+            <td>Gloves, masks, hygiene protocols</td>
+        </tr>
+        <tr>
+            <td>Water Kiosk Operations</td>
+            <td>Slips, trips, contamination</td>
+            <td>Non-slip surfaces, clean water, hygiene training</td>
+        </tr>
+        <tr>
+            <td>Water Plant Operations</td>
+            <td>Electrical, chemical (RO), confined spaces</td>
+            <td>PPE, lockout/tagout, confined space training</td>
+        </tr>
+        <tr>
+            <td>Community Barazas</td>
+            <td>Crowd control, COVID-19</td>
+            <td>Ventilation, masks, hygiene, crowd management</td>
+        </tr>
+        <tr>
+            <td>Construction</td>
+            <td>Falls, injuries</td>
+            <td>Harnesses, helmets, safe scaffolding</td>
+        </tr>
+    </table>
+    <h3>7. First Aid</h3>
+    <ul>
+        <li>First aid kits available at all project sites.</li>
+        <li>Trained first aiders identified.</li>
+        <li>Emergency contact numbers displayed.</li>
+        <li>Referral to nearest health facility.</li>
+    </ul>
+    <h3>8. Emergency Procedures</h3>
+    <table>
+        <tr>
+            <th>Emergency</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Fire</td>
+            <td>Raise alarm; evacuate; call 999/112</td>
+        </tr>
+        <tr>
+            <td>Medical</td>
+            <td>Administer first aid; call ambulance; notify next of kin</td>
+        </tr>
+        <tr>
+            <td>Accident</td>
+            <td>Secure scene; administer first aid; report</td>
+        </tr>
+        <tr>
+            <td>Natural Disaster</td>
+            <td>Follow evacuation plan; assemble at designated point</td>
+        </tr>
+        <tr>
+            <td>Security</td>
+            <td>Follow security protocol; call police</td>
+        </tr>
+    </table>
+    <h3>9. Incident Reporting</h3>
+    <ol>
+        <li>Report all incidents, injuries, and near-misses.</li>
+        <li>Complete an Incident Report Form within 24 hours.</li>
+        <li>Submit to the Health and Safety Officer.</li>
+        <li>Investigate to prevent recurrence.</li>
+        <li>Report to authorities as required by law.</li>
+    </ol>
+    <h3>10. Training</h3>
+    <ul>
+        <li>Induction training on health and safety for all new staff and volunteers.</li>
+        <li>Annual refresher training.</li>
+        <li>Specialised training for high-risk activities.</li>
+        <li>First aid training for designated personnel.</li>
+    </ul>
+    <h3>11. Legal Framework</h3>
+    <ul>
+        <li>Occupational Safety and Health Act (OSHA) 2007</li>
+        <li>Work Injury Benefits Act (WIBA) 2007</li>
+        <li>Public Health Act (Cap 242)</li>
+        <li>Environmental Management and Coordination Act (EMCA) 1999</li>
+    </ul>
+    <h3>12. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 8 -->
+    <h2 class="policy-title" id="policy-8">POLICY 8: FINANCIAL MANAGEMENT POLICY</h2>
+    <h3>1. Purpose</h3>
+    <p>KISI is committed to prudent financial management, transparency, and accountability. This policy establishes the
+        systems and procedures for managing KISI's financial resources in accordance with Kenyan law and donor
+        requirements.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all KISI funds, assets, and financial transactions, including grants, donations, membership fees, and
+        social enterprise revenue.</p>
+    <h3>3. Guiding Principles</h3>
+    <ul>
+        <li><strong>Accountability:</strong> All funds are accounted for and used for intended purposes.</li>
+        <li><strong>Transparency:</strong> Financial information is accessible to members and donors.</li>
+        <li><strong>Integrity:</strong> Financial transactions are honest and ethical.</li>
+        <li><strong>Compliance:</strong> Comply with all applicable laws and donor requirements.</li>
+        <li><strong>Value for Money:</strong> Achieve best value in all expenditures.</li>
+        <li><strong>Segregation of Duties:</strong> No single person controls all aspects of a transaction.</li>
+    </ul>
+    <h3>4. Roles and Responsibilities</h3>
+    <table>
+        <tr>
+            <th>Role</th>
+            <th>Responsibilities</th>
+        </tr>
+        <tr>
+            <td>Management Committee</td>
+            <td>Approve budgets; review financial reports; oversight</td>
+        </tr>
+        <tr>
+            <td>Treasurer</td>
+            <td>Day-to-day financial management; banking; record-keeping; reporting</td>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Signatory; oversight; authorisation</td>
+        </tr>
+        <tr>
+            <td>Secretary</td>
+            <td>Signatory; record-keeping (non-financial)</td>
+        </tr>
+        <tr>
+            <td>Internal Audit Committee</td>
+            <td>Quarterly internal audits; report to Management Committee</td>
+        </tr>
+        <tr>
+            <td>External Auditor</td>
+            <td>Annual external audit; report to AGM</td>
+        </tr>
+    </table>
+    <h3>5. Banking Arrangements</h3>
+    <ul>
+        <li>KISI shall maintain a bank account at a reputable financial institution.</li>
+        <li>Signatories: Chairperson, Treasurer (mandatory), Secretary.</li>
+        <li>Two signatories required for all withdrawals.</li>
+        <li>No blank cheques.</li>
+        <li>Bank reconciliations monthly.</li>
+        <li>Bank statements reviewed by Management Committee quarterly.</li>
+    </ul>
+    <h3>6. Budgeting</h3>
+    <ul>
+        <li>Annual budget prepared by Treasurer and approved by Management Committee.</li>
+        <li>Project budgets prepared for each project and approved before implementation.</li>
+        <li>Budget vs actual analysis conducted monthly.</li>
+        <li>Budget revisions require Management Committee approval.</li>
+    </ul>
+    <h3>7. Expenditure Procedures</h3>
+    <table>
+        <tr>
+            <th>Step</th>
+            <th>Action</th>
+            <th>Responsible</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Request for expenditure (requisition)</td>
+            <td>Project lead</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Approval</td>
+            <td>Treasurer / Chairperson</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Procurement (where applicable)</td>
+            <td>Procurement committee</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Payment processing</td>
+            <td>Treasurer</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Receipt / voucher</td>
+            <td>Payee</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Recording</td>
+            <td>Treasurer</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Filing</td>
+            <td>Treasurer</td>
+        </tr>
+    </table>
+    <h3>8. Procurement</h3>
+    <ul>
+        <li>Competitive bidding for purchases above KES 20,000.</li>
+        <li>Three quotations required for purchases KES 5,000 – 20,000.</li>
+        <li>Direct purchase allowed for items below KES 5,000.</li>
+        <li>Procurement committee (3 members) for large purchases.</li>
+        <li>Conflict of interest declared and recused.</li>
+        <li>All purchases supported by receipts and delivery notes.</li>
+    </ul>
+    <h3>9. Cash Management</h3>
+    <ul>
+        <li>Petty cash float of KES 10,000 maximum.</li>
+        <li>Petty cash book maintained.</li>
+        <li>Receipts for all petty cash payments.</li>
+        <li>Surprise cash counts by Internal Audit Committee.</li>
+        <li>Cash deposited in bank within 7 days.</li>
+    </ul>
+    <h3>10. Financial Records</h3>
+    <p>KISI shall maintain: cash book, bank reconciliation statements, payment vouchers, receipt books, general ledger,
+        asset register, payroll records, budget and financial reports, and audit reports. Records shall be retained for
+        a minimum of seven years.</p>
+    <h3>11. Financial Reporting</h3>
+    <table>
+        <tr>
+            <th>Report</th>
+            <th>Frequency</th>
+            <th>Audience</th>
+        </tr>
+        <tr>
+            <td>Monthly Financial Report</td>
+            <td>Monthly</td>
+            <td>Management Committee</td>
+        </tr>
+        <tr>
+            <td>Quarterly Financial Report</td>
+            <td>Quarterly</td>
+            <td>Management Committee, Donors</td>
+        </tr>
+        <tr>
+            <td>Annual Financial Report</td>
+            <td>Annually</td>
+            <td>AGM, Donors</td>
+        </tr>
+        <tr>
+            <td>Project Financial Report</td>
+            <td>As required</td>
+            <td>Donors</td>
+        </tr>
+        <tr>
+            <td>Audited Accounts</td>
+            <td>Annually</td>
+            <td>AGM, Donors, Authorities</td>
+        </tr>
+    </table>
+    <h3>12. Auditing</h3>
+    <ul>
+        <li><strong>Internal Audit:</strong> Conducted quarterly by a 3-member committee (non-signatories).</li>
+        <li><strong>External Audit:</strong> Conducted annually by an independent auditor.</li>
+        <li><strong>Donor Audit:</strong> Conducted as required by donor agreements.</li>
+        <li>Audit findings presented to AGM and Management Committee.</li>
+        <li>Action plan for audit recommendations.</li>
+    </ul>
+    <h3>13. Asset Management</h3>
+    <ul>
+        <li>Asset register maintained for all assets above KES 5,000.</li>
+        <li>Assets tagged and verified annually.</li>
+        <li>Disposal of assets requires Management Committee approval.</li>
+        <li>Assets insured where appropriate.</li>
+    </ul>
+    <h3>14. Fraud Prevention</h3>
+    <p>Refer to KISI Anti-Fraud and Anti-Corruption Policy. Key controls include: segregation of duties, dual
+        signatories, regular reconciliations, internal audits, whistleblowing channels, and conflict of interest
+        declarations.</p>
+    <h3>15. Compliance</h3>
+    <ul>
+        <li>Income Tax Act (Cap 470)</li>
+        <li>Value Added Tax Act 2013</li>
+        <li>Public Finance Management Act 2012</li>
+        <li>Public Procurement and Asset Disposal Act 2015</li>
+        <li>Societies Act (Cap 108)</li>
+        <li>NGO Coordination Act 1990</li>
+        <li>Donor financial requirements</li>
+    </ul>
+    <h3>16. Review</h3>
+    <p>This policy shall be reviewed every two years.</p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- POLICY 9 -->
+    <h2 class="policy-title" id="policy-9">POLICY 9: SAFEGUARDING POLICY</h2>
+    <h3>1. Introduction and Purpose</h3>
+    <p>Kilifian4 Integrity and Sustainability Initiative (KISI) is a community-based organisation registered in Kilifi
+        County, Kenya. KISI is committed to promoting sustainable livelihoods, environmental conservation, and community
+        health through integrity-driven, locally appropriate innovations.</p>
+    <p>KISI recognises that its work brings it into contact with vulnerable individuals, including women, girls, boys,
+        young mothers, persons with disabilities, the elderly, and marginalised groups. This Safeguarding Policy sets
+        out KISI's commitment to protecting these individuals from harm, abuse, exploitation, and neglect.</p>
+    <p>The purpose of this policy is to:</p>
+    <ol>
+        <li>Establish clear safeguarding standards for all KISI staff, volunteers, partners, and associates.</li>
+        <li>Prevent harm to children, young people, and vulnerable adults involved in KISI's activities.</li>
+        <li>Provide clear procedures for reporting, responding to, and managing safeguarding concerns.</li>
+        <li>Ensure compliance with Kenyan law and international safeguarding standards, including the Commonwealth
+            Foundation's requirements.</li>
+        <li>Promote a culture of safety, dignity, and respect throughout the organisation.</li>
+    </ol>
+    <h3>2. Scope</h3>
+    <p>This policy applies to all KISI office bearers, members, staff, volunteers, partner organisations, consultants,
+        contractors, and visitors. It covers all KISI activities, including community mobilisation, training programmes,
+        water kiosk operations, neem processing, BSF farming, generator construction, health education, M&amp;E, and
+        digital library programmes.</p>
+    <h3>3. Definitions</h3>
+    <table>
+        <tr>
+            <th>Term</th>
+            <th>Definition</th>
+        </tr>
+        <tr>
+            <td>Child</td>
+            <td>Any person under the age of 18 years</td>
+        </tr>
+        <tr>
+            <td>Vulnerable Adult</td>
+            <td>Any person aged 18 or over who is unable to protect themselves from harm or exploitation</td>
+        </tr>
+        <tr>
+            <td>Safeguarding</td>
+            <td>Measures taken to protect children and vulnerable adults from harm</td>
+        </tr>
+        <tr>
+            <td>Harm</td>
+            <td>Physical, emotional, sexual, or psychological injury or damage</td>
+        </tr>
+        <tr>
+            <td>Abuse</td>
+            <td>Physical, emotional, sexual, or financial mistreatment</td>
+        </tr>
+        <tr>
+            <td>Exploitation</td>
+            <td>Taking advantage of a person for personal gain</td>
+        </tr>
+        <tr>
+            <td>Neglect</td>
+            <td>Failure to provide necessary care, supervision, or protection</td>
+        </tr>
+        <tr>
+            <td>Safeguarding Concern</td>
+            <td>Any suspicion, allegation, or disclosure of harm</td>
+        </tr>
+        <tr>
+            <td>Safeguarding Focal Point</td>
+            <td>Designated KISI officer responsible for safeguarding</td>
+        </tr>
+        <tr>
+            <td>Mandatory Reporting</td>
+            <td>Legal obligation to report certain types of harm to authorities</td>
+        </tr>
+    </table>
+    <h3>4. Policy Statement</h3>
+    <p>KISI is committed to: Zero Tolerance; Best Interests; Safe Recruitment; Awareness and Training; Reporting and
+        Response; Confidentiality; Non-Retaliation; Accountability; Legal Compliance; and Continuous Improvement.</p>
+    <h3>5. Code of Conduct</h3>
+    <p><strong>DO:</strong> Treat all individuals with dignity, respect, and fairness; create a safe and inclusive
+        environment; be aware of power imbalances; report any safeguarding concerns immediately; follow KISI's
+        safeguarding procedures; cooperate fully with investigations; maintain appropriate professional boundaries; be
+        vigilant and proactive in protecting vulnerable persons.</p>
+    <p><strong>DO NOT:</strong> Engage in any form of abuse; use inappropriate language or behaviour; develop
+        inappropriate relationships; give gifts or money without approval; take photographs or videos without consent;
+        share personal information without authorisation; spend time alone with a child in a secluded place; engage in
+        exploitative or harmful activities; retaliate against anyone who reports a concern.</p>
+    <h3>6. Safeguarding Procedures</h3>
+    <h4>6.1 Safer Recruitment</h4>
+    <p>Identity Verification; Background Checks (Police clearance); Reference Checks (two); Qualification Verification;
+        Safeguarding Declaration; Probation Period.</p>
+    <h4>6.2 Safeguarding Training</h4>
+    <p>Induction Training (within 30 days); Annual Refresher Training; Specialised Training; Community Awareness.</p>
+    <h4>6.3 Reporting Safeguarding Concerns</h4>
+    <p>Immediately Report to Safeguarding Focal Point or any office bearer; Document the concern in writing; Maintain
+        Confidentiality; Cooperate with investigation.</p>
+    <table>
+        <tr>
+            <th>Channel</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Safeguarding Focal Point</td>
+            <td>[Name], [Phone], [Email]</td>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Mwanaidi Muhavi Ayumba, 0734440543</td>
+        </tr>
+        <tr>
+            <td>Treasurer</td>
+            <td>Moses Isutsa, 0720468616</td>
+        </tr>
+        <tr>
+            <td>Secretary</td>
+            <td>Silvia Stancy Njoki, 0790592884</td>
+        </tr>
+        <tr>
+            <td>External</td>
+            <td>Childline Kenya: 116 | Kenya Police: 999/112</td>
+        </tr>
+    </table>
+    <h4>6.4 Responding to Safeguarding Concerns</h4>
+    <p>Ensure Immediate Safety; Preserve Evidence; Notify Authorities; Conduct Investigation; Support Affected Persons;
+        Take Disciplinary Action; Review and Learn.</p>
+    <h4>6.5 Confidentiality and Data Protection</h4>
+    <p>Store records securely; Share only on need-to-know basis; Comply with Data Protection Act 2019; Retain records
+        per law.</p>
+    <h3>7. Specific Safeguarding Measures for KISI Projects</h3>
+    <table>
+        <tr>
+            <th>Project</th>
+            <th>Measures</th>
+        </tr>
+        <tr>
+            <td>Water Kiosk Operations</td>
+            <td>Female attendants; private washing areas; safe lighting; emergency contacts</td>
+        </tr>
+        <tr>
+            <td>Neem Processing and BSF Farming</td>
+            <td>Safe conditions; PPE; supervision; no child labour</td>
+        </tr>
+        <tr>
+            <td>Generator Construction</td>
+            <td>Age-appropriate tasks; adult supervision; safety training</td>
+        </tr>
+        <tr>
+            <td>Health Education and Barazas</td>
+            <td>Child-friendly spaces; separate sessions; trained facilitators</td>
+        </tr>
+        <tr>
+            <td>Digital Library</td>
+            <td>Safe online environment; internet safety education; parental consent</td>
+        </tr>
+        <tr>
+            <td>Care for the Ageing</td>
+            <td>Dignity; protection from exploitation; safe environment; welfare checks</td>
+        </tr>
+    </table>
+    <h3>8. Roles and Responsibilities</h3>
+    <table>
+        <tr>
+            <th>Role</th>
+            <th>Responsibilities</th>
+        </tr>
+        <tr>
+            <td>Management Committee</td>
+            <td>Overall accountability; approve policy; ensure resources</td>
+        </tr>
+        <tr>
+            <td>Chairperson</td>
+            <td>Ensure implementation; senior safeguarding lead; external representation</td>
+        </tr>
+        <tr>
+            <td>Safeguarding Focal Point</td>
+            <td>Receive and manage concerns; maintain records; coordinate training</td>
+        </tr>
+        <tr>
+            <td>Treasurer</td>
+            <td>Safeguarding budget; financial controls; audit compliance</td>
+        </tr>
+        <tr>
+            <td>Secretary</td>
+            <td>Maintain records; minute meetings; manage communications</td>
+        </tr>
+        <tr>
+            <td>All Staff and Volunteers</td>
+            <td>Comply with policy; report concerns; participate in training</td>
+        </tr>
+        <tr>
+            <td>Partners</td>
+            <td>Comply with policy; report concerns; cooperate with investigations</td>
+        </tr>
+    </table>
+    <h3>9. Monitoring and Review</h3>
+    <p>Monitor through regular spot checks, audits, feedback; Report quarterly safeguarding reports to Management
+        Committee; Review every two years or sooner if required; Learn from lessons learned; Evaluate effectiveness
+        annually.</p>
+    <h3>10. Related Policies</h3>
+    <p>KISI Constitution (2025); KISI Code of Conduct; KISI Child Protection Policy; KISI Anti-Fraud and Anti-Corruption
+        Policy; KISI Whistleblowing Policy; KISI Data Protection Policy; KISI Gender Equality Policy; KISI Health and
+        Safety Policy; KISI Financial Management Policy.</p>
+    <h3>11. Legal Framework</h3>
+    <p>Constitution of Kenya 2010; Children Act 2022; Sexual Offences Act 2006; Employment Act 2007; Data Protection Act
+        2019; Persons with Disabilities Act 2003; Kenya Vision 2030; UN CRC; CEDAW; Commonwealth Foundation Safeguarding
+        Requirements.</p>
+    <h3>12. Policy Approval</h3>
+    <table class="signature-table">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Signature</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Mwanaidi Muhavi Ayumba</td>
+            <td>Chairperson</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Moses Isutsa Richard Shileche</td>
+            <td>Treasurer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Silvia Stancy Njoki</td>
+            <td>Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Isaac Masika Wekesa</td>
+            <td>Vice Chair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Mercyline Namaeso Wanyama</td>
+            <td>Vice Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fred Cmatete Wafula</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Samson Baraka Charo</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h1 class="part-title" id="part-b">PART B: ANNEXES</h1>
+
+    <!-- ANNEX A -->
+    <h2 class="policy-title" id="annex-a">ANNEX A: SAFEGUARDING INCIDENT REPORT FORM</h2>
+    <p class="confidential">CONFIDENTIAL — FOR SAFEGUARDING USE ONLY</p>
+
+    <h3>Section 1: Reporter Details</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Full Name</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Role / Position</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Email Address</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Relationship to Affected Person</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Date of Report</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Anonymous Report?</td>
+            <td>☐ Yes &nbsp;&nbsp; ☐ No</td>
+        </tr>
+    </table>
+
+    <h3>Section 2: Affected Person Details</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Full Name (if known)</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Age / Date of Birth</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>☐ Female &nbsp; ☐ Male &nbsp; ☐ Other &nbsp; ☐ Prefer not to say</td>
+        </tr>
+        <tr>
+            <td>Is the person a child (under 18)?</td>
+            <td>☐ Yes &nbsp; ☐ No &nbsp; ☐ Unknown</td>
+        </tr>
+        <tr>
+            <td>Is the person a vulnerable adult?</td>
+            <td>☐ Yes &nbsp; ☐ No &nbsp; ☐ Unknown</td>
+        </tr>
+        <tr>
+            <td>Address / Location</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Guardian / Next of Kin (if applicable)</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Contact of Guardian / Next of Kin</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+    </table>
+
+    <h3>Section 3: Incident Details</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Date of Incident</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Time of Incident</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Location of Incident</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Type of Concern</td>
+            <td>
+                ☐ Physical abuse &nbsp; ☐ Emotional abuse &nbsp; ☐ Sexual abuse<br>
+                ☐ Neglect &nbsp; ☐ Exploitation &nbsp; ☐ Bullying<br>
+                ☐ Harassment &nbsp; ☐ Discrimination &nbsp; ☐ Other (specify)
+            </td>
+        </tr>
+        <tr>
+            <td>Description of Incident</td>
+            <td>
+                <div class="form-line"></div>
+                <div class="form-line"></div>
+                <div class="form-line"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Who was involved? (names/roles)</td>
+            <td>
+                <div class="form-line"></div>
+                <div class="form-line"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Were there witnesses?</td>
+            <td>☐ Yes &nbsp; ☐ No &nbsp; If yes, list:</td>
+        </tr>
+        <tr>
+            <td>Immediate actions taken</td>
+            <td>
+                <div class="form-line"></div>
+                <div class="form-line"></div>
+            </td>
+        </tr>
+        <tr>
+            <td>Was the incident reported to authorities?</td>
+            <td>☐ Yes &nbsp; ☐ No &nbsp; If yes, which authority and when?</td>
+        </tr>
+        <tr>
+            <td>Evidence available</td>
+            <td>☐ Photos &nbsp; ☐ Documents &nbsp; ☐ Witness statements &nbsp; ☐ Medical report &nbsp; ☐ Other</td>
+        </tr>
+    </table>
+
+    <h3>Section 4: Declaration</h3>
+    <p>I declare that the information provided in this form is true and accurate to the best of my knowledge.</p>
+    <table>
+        <tr>
+            <th>Reporter's Signature</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+    </table>
+
+    <h3>Section 5: Office Use Only</h3>
+    <table>
+        <tr>
+            <th>Date Received</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Received By</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Case Reference Number</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Action Taken</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Referred To</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Date Closed</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+    </table>
+    <p class="callout"><strong>Submit to:</strong> Safeguarding Focal Point, KISI CBO<br>
+        <strong>Email:</strong> kilifian4cbo@yahoo.com | <strong>Phone:</strong> 0720468616
+    </p>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ANNEX B -->
+    <h2 class="policy-title" id="annex-b">ANNEX B: SAFEGUARDING CODE OF CONDUCT</h2>
+    <h3>1. Purpose</h3>
+    <p>This Safeguarding Code of Conduct sets out the behaviour expected of all KISI office bearers, members, staff,
+        volunteers, partners, and visitors when working with children and vulnerable adults.</p>
+    <h3>2. Scope</h3>
+    <p>Applies to all persons engaged in KISI activities, whether paid or unpaid, formal or informal.</p>
+    <h3>3. Our Commitments</h3>
+    <p>I, as a person working with or on behalf of KISI, commit to the standards below.</p>
+    <h3>4. DO — Expected Behaviour</h3>
+    <ul>
+        <li>Treat all children and vulnerable adults with dignity and respect.</li>
+        <li>Create a safe, inclusive, and welcoming environment.</li>
+        <li>Be aware of power imbalances and never exploit them.</li>
+        <li>Maintain appropriate professional boundaries.</li>
+        <li>Work in pairs or visible areas whenever with children.</li>
+        <li>Report any safeguarding concern immediately.</li>
+        <li>Comply with KISI's Safeguarding Policy and related procedures.</li>
+        <li>Cooperate fully with any safeguarding investigation.</li>
+        <li>Attend safeguarding training and refresher sessions.</li>
+        <li>Respect cultural diversity and local norms.</li>
+        <li>Use appropriate, non-discriminatory language.</li>
+        <li>Obtain consent before taking photographs or videos.</li>
+    </ul>
+    <h3>5. DO NOT — Prohibited Behaviour</h3>
+    <ul>
+        <li>Engage in physical, emotional, sexual, or financial abuse.</li>
+        <li>Develop inappropriate relationships with children or vulnerable adults.</li>
+        <li>Spend time alone with a child in a secluded place.</li>
+        <li>Give gifts, money, or favours without prior approval.</li>
+        <li>Take photographs or videos without consent.</li>
+        <li>Share personal information without authorisation.</li>
+        <li>Use inappropriate language, gestures, or behaviour.</li>
+        <li>Administer physical punishment or threaten harm.</li>
+        <li>Discriminate based on gender, age, disability, ethnicity, religion, or sexual orientation.</li>
+        <li>Retaliate against anyone who reports a safeguarding concern.</li>
+        <li>Work under the influence of alcohol or drugs.</li>
+        <li>Engage in any activity that could be perceived as exploitative or harmful.</li>
+    </ul>
+    <h3>6. Special Provisions for Working with Children</h3>
+    <ul>
+        <li>Always have a second adult present or within sight.</li>
+        <li>Use open, public spaces for activities.</li>
+        <li>Respect children's privacy and dignity.</li>
+        <li>Encourage children to speak up about any concerns.</li>
+        <li>Never use children for personal, political, or financial gain.</li>
+        <li>Report any suspicion of abuse or neglect immediately.</li>
+    </ul>
+    <h3>7. Special Provisions for Working with Vulnerable Adults</h3>
+    <ul>
+        <li>Respect autonomy and informed consent.</li>
+        <li>Protect against financial exploitation.</li>
+        <li>Ensure privacy and confidentiality.</li>
+        <li>Adapt communication to their needs.</li>
+        <li>Report any concerns to the Safeguarding Focal Point.</li>
+    </ul>
+    <h3>8. Reporting Obligations</h3>
+    <p>I understand that I must report any safeguarding concern immediately; reporting can be done to the Safeguarding
+        Focal Point or any KISI office bearer; anonymous reporting is accepted; and failure to report is itself a breach
+        of this Code.</p>
+    <h3>9. Consequences of Breach</h3>
+    <table>
+        <tr>
+            <th>Level</th>
+            <th>Example</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>Minor</td>
+            <td>Inappropriate language, lateness</td>
+            <td>Verbal warning; further training</td>
+        </tr>
+        <tr>
+            <td>Moderate</td>
+            <td>Breach of boundaries, unauthorised photos</td>
+            <td>Written warning; suspension</td>
+        </tr>
+        <tr>
+            <td>Serious</td>
+            <td>Abuse, exploitation, failure to report abuse</td>
+            <td>Immediate dismissal; referral to authorities</td>
+        </tr>
+    </table>
+    <h3>10. Declaration</h3>
+    <p>I have read, understood, and agree to abide by this Safeguarding Code of Conduct.</p>
+    <table class="signature-table">
+        <tr>
+            <th>Full Name</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Role / Position</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Signature</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Witness Name</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Witness Signature</th>
+            <td></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ANNEX C -->
+    <h2 class="policy-title" id="annex-c">ANNEX C: SAFEGUARDING TRAINING REGISTER</h2>
+    <h3>Training Session Details</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Training Title</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Training Date</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Duration (hours)</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Venue</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Trainer / Facilitator</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Trainer Organisation</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Topics Covered</td>
+            <td>☐ Safeguarding Policy &nbsp; ☐ Code of Conduct &nbsp; ☐ Child Protection &nbsp; ☐ Reporting Procedures
+                &nbsp; ☐ GBV Response &nbsp; ☐ Data Protection &nbsp; ☐ Other</td>
+        </tr>
+    </table>
+    <h3>Attendance Register</h3>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Full Name</th>
+            <th>ID No.</th>
+            <th>Role/Organisation</th>
+            <th>Phone</th>
+            <th>Email</th>
+            <th>Signature</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>11</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>12</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>14</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>15</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>16</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>17</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>18</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>19</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>20</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>Summary</h3>
+    <table>
+        <tr>
+            <th>Total Participants</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Female</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Male</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Persons with Disability</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Youth (under 30)</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+    </table>
+    <h3>Certification</h3>
+    <table class="signature-table">
+        <tr>
+            <th>Trainer Signature</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Safeguarding Focal Point Signature</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ANNEX D -->
+    <h2 class="policy-title" id="annex-d">ANNEX D: SAFEGUARDING REFERRAL PATHWAYS</h2>
+    <h3>1. Purpose</h3>
+    <p>This annex provides clear referral pathways for handling safeguarding concerns, ensuring that affected persons
+        receive timely, appropriate, and confidential support.</p>
+    <h3>2. Internal Referral Pathway</h3>
+    <div class="callout"><strong>Step 1:</strong> Any person who witnesses or receives a disclosure of harm reports
+        immediately to the Safeguarding Focal Point or any KISI office bearer.</div>
+    <div class="callout"><strong>Step 2:</strong> Safeguarding Focal Point ensures immediate safety of the affected
+        person and documents the concern within 24 hours.</div>
+    <div class="callout"><strong>Step 3:</strong> Safeguarding Focal Point conducts a preliminary risk assessment within
+        48 hours.</div>
+    <div class="callout"><strong>Step 4:</strong> If risk is high, Safeguarding Focal Point reports to authorities
+        (Police, Children's Services, or Health Facility) immediately.</div>
+    <div class="callout"><strong>Step 5:</strong> Safeguarding Focal Point informs Management Committee and coordinates
+        further response.</div>
+    <div class="callout"><strong>Step 6:</strong> KISI provides support to the affected person (counselling, medical,
+        legal) and monitors the situation.</div>
+    <div class="callout"><strong>Step 7:</strong> Case is documented, closed, and lessons learned are integrated into
+        KISI practice.</div>
+    <h3>3. External Referral Contacts</h3>
+    <table>
+        <tr>
+            <th>Service Type</th>
+            <th>Organisation</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Emergency (Police)</td>
+            <td>Kenya Police</td>
+            <td>999 / 112</td>
+        </tr>
+        <tr>
+            <td>Child Protection</td>
+            <td>Childline Kenya</td>
+            <td>116 (toll-free)</td>
+        </tr>
+        <tr>
+            <td>Gender-Based Violence</td>
+            <td>GVRC / Healthcare Assistance Kenya</td>
+            <td>1195 (toll-free)</td>
+        </tr>
+        <tr>
+            <td>Anti-Corruption</td>
+            <td>EACC</td>
+            <td>1517 (toll-free)</td>
+        </tr>
+        <tr>
+            <td>Health Services</td>
+            <td>Kilifi County Referral Hospital</td>
+            <td>[To be inserted]</td>
+        </tr>
+        <tr>
+            <td>Children's Services</td>
+            <td>Kilifi County Department of Children Services</td>
+            <td>[To be inserted]</td>
+        </tr>
+        <tr>
+            <td>Legal Aid</td>
+            <td>FIDA Kenya / Kituo Cha Sheria</td>
+            <td>[To be inserted]</td>
+        </tr>
+        <tr>
+            <td>Mental Health</td>
+            <td>Kenya Red Cross Counselling</td>
+            <td>1199 (toll-free)</td>
+        </tr>
+        <tr>
+            <td>Disability Services</td>
+            <td>National Council for Persons with Disabilities</td>
+            <td>[To be inserted]</td>
+        </tr>
+    </table>
+    <h3>4. Referral Decision Matrix</h3>
+    <table>
+        <tr>
+            <th>Type of Concern</th>
+            <th>Immediate Referral</th>
+            <th>Follow-up Referral</th>
+        </tr>
+        <tr>
+            <td>Physical abuse (child)</td>
+            <td>Police + Children's Services + Health Facility</td>
+            <td>Counselling, legal support</td>
+        </tr>
+        <tr>
+            <td>Sexual abuse</td>
+            <td>Police + Health Facility (PEP within 72 hrs)</td>
+            <td>Counselling, legal support, safe shelter</td>
+        </tr>
+        <tr>
+            <td>Emotional abuse</td>
+            <td>Children's Services</td>
+            <td>Counselling, family support</td>
+        </tr>
+        <tr>
+            <td>Neglect</td>
+            <td>Children's Services</td>
+            <td>Family support, welfare monitoring</td>
+        </tr>
+        <tr>
+            <td>GBV (adult)</td>
+            <td>Police + Health Facility</td>
+            <td>Counselling, legal support, shelter</td>
+        </tr>
+        <tr>
+            <td>Financial exploitation (elderly)</td>
+            <td>Police + Social Services</td>
+            <td>Legal support, welfare monitoring</td>
+        </tr>
+        <tr>
+            <td>Discrimination / harassment</td>
+            <td>Management Committee</td>
+            <td>Disciplinary action, counselling</td>
+        </tr>
+        <tr>
+            <td>Mental health crisis</td>
+            <td>Health Facility</td>
+            <td>Counselling, follow-up</td>
+        </tr>
+    </table>
+    <h3>5. Documentation Requirements</h3>
+    <ul>
+        <li>Complete the Safeguarding Incident Report Form (Annex A).</li>
+        <li>Record referral date, agency contacted, and contact person.</li>
+        <li>Maintain confidentiality; share information only on need-to-know basis.</li>
+        <li>Store records securely for seven years.</li>
+    </ul>
+    <h3>6. Confidentiality and Consent</h3>
+    <p>Information is shared only with the affected person's consent, unless: the person is a child or vulnerable adult
+        at risk of significant harm; there is a legal obligation to report; or disclosure is necessary to protect the
+        person or others from harm.</p>
+    <h3>7. KISI Safeguarding Focal Point</h3>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>[To be appointed]</td>
+        </tr>
+        <tr>
+            <th>Phone</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <th>Alternate Contact</th>
+            <td>Chairperson: Mwanaidi Muhavi Ayumba, 0734440543</td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <!-- ANNEX E -->
+    <h2 class="policy-title" id="annex-e">ANNEX E: SAFEGUARDING RISK ASSESSMENT TEMPLATE</h2>
+    <h3>1. Purpose</h3>
+    <p>This template is used to identify, assess, and mitigate safeguarding risks in KISI activities, ensuring that
+        children and vulnerable adults are protected.</p>
+    <h3>2. Activity Information</h3>
+    <table>
+        <tr>
+            <th>Field</th>
+            <th>Details</th>
+        </tr>
+        <tr>
+            <td>Activity Name</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Date(s)</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Activity Lead</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Participants (number, age, gender, vulnerability)</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Persons Working with Children/Vulnerable Adults</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+        <tr>
+            <td>Partners Involved</td>
+            <td><span class="form-field">&nbsp;</span></td>
+        </tr>
+    </table>
+    <h3>3. Risk Assessment Matrix</h3>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Risk Identified</th>
+            <th>Who is at Risk</th>
+            <th>Likelihood (1–5)</th>
+            <th>Impact (1–5)</th>
+            <th>Risk Score (L×I)</th>
+            <th>Mitigation Measures</th>
+            <th>Responsible</th>
+            <th>Review Date</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p><strong>Risk Scoring Guide:</strong><br>
+        Likelihood: 1 = Very unlikely; 2 = Unlikely; 3 = Possible; 4 = Likely; 5 = Almost certain<br>
+        Impact: 1 = Negligible; 2 = Minor; 3 = Moderate; 4 = Major; 5 = Severe<br>
+        Risk Score: 1–6 = Low; 7–12 = Medium; 13–19 = High; 20–25 = Extreme</p>
+    <h3>4. Common Safeguarding Risks in KISI Activities</h3>
+    <table>
+        <tr>
+            <th>Activity</th>
+            <th>Common Risks</th>
+            <th>Suggested Mitigations</th>
+        </tr>
+        <tr>
+            <td>Water Kiosk Operations</td>
+            <td>GBV at water points; exploitation of girls</td>
+            <td>Female attendants; safe lighting; GBV referral pathway</td>
+        </tr>
+        <tr>
+            <td>Neem Processing</td>
+            <td>Child labour; exposure to dust</td>
+            <td>No under-16 workers; PPE; supervision</td>
+        </tr>
+        <tr>
+            <td>BSF Farming</td>
+            <td>Biological hazards; child labour</td>
+            <td>Adult-only tasks; PPE; hygiene protocols</td>
+        </tr>
+        <tr>
+            <td>Generator Construction</td>
+            <td>Injuries to youth; electric shock</td>
+            <td>Training; supervision; PPE; age limits</td>
+        </tr>
+        <tr>
+            <td>Community Barazas</td>
+            <td>Crowd control; COVID-19; GBV disclosures</td>
+            <td>Ventilation; masks; trained facilitators; referral pathways</td>
+        </tr>
+        <tr>
+            <td>Digital Library</td>
+            <td>Online safety; inappropriate content</td>
+            <td>Internet filters; parental consent; monitoring</td>
+        </tr>
+        <tr>
+            <td>Care for the Ageing</td>
+            <td>Financial exploitation; neglect</td>
+            <td>Welfare checks; financial safeguards; family engagement</td>
+        </tr>
+        <tr>
+            <td>Construction</td>
+            <td>Falls; injuries; child labour</td>
+            <td>Helmets; harnesses; age verification</td>
+        </tr>
+    </table>
+    <h3>5. Risk Mitigation Action Plan</h3>
+    <table>
+        <tr>
+            <th>Risk</th>
+            <th>Mitigation Action</th>
+            <th>Responsible</th>
+            <th>Deadline</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <h3>6. Approval and Review</h3>
+    <table class="signature-table">
+        <tr>
+            <th>Prepared By</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Position</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Signature</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Reviewed By (Safeguarding Focal Point)</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Signature</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Date</th>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Next Review Date</th>
+            <td></td>
+        </tr>
+    </table>
+    <p class="back-to-top"><a href="#toc">↑ Back to Table of Contents</a></p>
+
+    <h1 class="part-title" id="part-c">PART C: APPROVAL AND SIGNATURES</h1>
+    <p>This Complete Safeguarding Manual has been reviewed and approved by the KISI Management Committee.</p>
+    <table class="signature-table">
+        <tr>
+            <th>Name</th>
+            <th>Position</th>
+            <th>Signature</th>
+            <th>Date</th>
+        </tr>
+        <tr>
+            <td>Mwanaidi Muhavi Ayumba</td>
+            <td>Chairperson</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Moses Isutsa Richard Shileche</td>
+            <td>Treasurer</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Silvia Stancy Njoki</td>
+            <td>Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Isaac Masika Wekesa</td>
+            <td>Vice Chair</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Mercyline Namaeso Wanyama</td>
+            <td>Vice Secretary</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Fred Cmatete Wafula</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Samson Baraka Charo</td>
+            <td>Committee Member</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <p><strong>Document Reference:</strong> KISI-SGM-2026-v1.0<br>
+        <strong>Approval Date:</strong> March 2026<br>
+        <strong>Review Date:</strong> March 2028<br>
+        <strong>Document Owner:</strong> Chairperson, KISI CBO<br>
+        <strong>Contact:</strong> kilifian4cbo@yahoo.com | 0720468616
+    </p>
+
+    <footer class="manual-footer">
+        <p><strong>END OF KISI COMPLETE SAFEGUARDING MANUAL</strong></p>
+        <p>KISI CBO &copy; 2026 | Document Reference: KISI-SGM-2026-v1.0</p>
+        <p><a href="#top" style="color: var(--primary-light);">↑ Back to Top</a></p>
+    </footer>
+
+</body>
+
+</html>
